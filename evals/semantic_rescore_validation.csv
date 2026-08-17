@@ -1,0 +1,1308 @@
+row_index,complexity,domain,exact_match,semantic_match,core_logic_match,reasons
+0,easy,automotive_dealership_service,False,True,True,
+1,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+2,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+3,easy,automotive_dealership_service,False,True,True,
+4,easy,automotive_dealership_service,False,False,False,"labels differ: gold=['WarrantyClaim'] pred=['Customer', 'WarrantyClaim']; rel_types differ: gold=[] pred=['FILED']; hop_count differs: gold=0 pred=1; return columns missing from prediction: {('prop', 'first_observed'), ('prop', 'id')}"
+5,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'model')}"
+6,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+7,easy,automotive_dealership_service,False,True,True,
+8,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'approval_authority_limit'), ('prop', 'id')}"
+9,complex,automotive_dealership_service,False,False,False,"rel_types differ: gold=['COVERED_BY', 'DIAGNOSED', 'FOR_VEHICLE', 'ISSUED_BY'] pred=['DIAGNOSED', 'FOR_VEHICLE', 'ISSUED_BY', 'UNDER_PLAN']; return columns missing from prediction: {('prop', 'name')}"
+10,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+11,complex,automotive_dealership_service,False,True,True,
+12,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+13,medium,automotive_dealership_service,False,True,True,
+14,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'coverage_limit_miles')}"
+15,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Company', 'Member'] pred=['Booking', 'Company', 'Desk', 'Member']; rel_types differ: gold=['BOOKED', 'WORKS_FOR'] pred=['BOOKED', 'FOR_DESK', 'WORKS_FOR']; aggregations differ: gold=['count', 'sum'] pred=['count']; hop_count differs: gold=2 pred=3"
+16,complex,coworking_space_management,False,True,True,
+17,complex,coworking_space_management,False,False,False,"rel_types differ: gold=['BILLED'] pred=['BILLED', 'PAID_BY']"
+18,complex,coworking_space_management,False,True,True,
+19,easy,coworking_space_management,False,True,True,
+20,medium,coworking_space_management,True,True,True,
+21,complex,daycare_childcare_management,False,True,True,
+22,complex,daycare_childcare_management,False,True,True,
+23,complex,daycare_childcare_management,False,True,True,
+24,complex,daycare_childcare_management,False,True,True,
+25,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'age_group')}"
+26,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'address')}"
+27,easy,ecommerce_order_fulfillment,False,False,False,"labels differ: gold=['RefundTransaction'] pred=['RefundTransaction', 'ReturnRequest']; rel_types differ: gold=[] pred=['RESULTS_IN']; hop_count differs: gold=0 pred=1"
+28,easy,ecommerce_order_fulfillment,False,True,True,
+29,complex,ecommerce_order_fulfillment,False,True,True,
+30,complex,ecommerce_order_fulfillment,False,True,True,
+31,complex,ecommerce_order_fulfillment,False,False,False,"labels differ: gold=['Customer', 'Order', 'RefundTransaction', 'ReturnRequest', 'ReturnedItem'] pred=['Customer', 'Product', 'RefundTransaction', 'ReturnRequest', 'ReturnedItem']; rel_types differ: gold=['INCLUDES_ITEM', 'PLACED', 'RESULTS_IN', 'SUBJECT_OF'] pred=['INCLUDES_ITEM', 'ITEM_IS', 'RECEIVES', 'RESULTS_IN']"
+32,complex,ecommerce_order_fulfillment,False,False,False,"where_conditions differ: missing={('reason_category', '=', 'damaged in transit')} extra={('condition_reported', '=', 'damaged')}"
+33,complex,film_production_management,False,True,True,
+34,complex,film_production_management,False,False,False,"labels differ: gold=['Approver', 'Expense', 'Production', 'PurchaseOrder', 'Vendor'] pred=['Approver', 'Expense', 'Production', 'PurchaseOrder']; rel_types differ: gold=['APPROVED_BY', 'FOR_PRODUCTION', 'GENERATES', 'ISSUED_TO'] pred=['APPROVED_BY', 'FOR_PRODUCTION', 'GENERATES']; hop_count differs: gold=4 pred=3"
+35,complex,film_production_management,False,True,True,
+36,complex,film_production_management,False,True,True,
+37,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+38,easy,film_production_management,False,True,True,
+39,complex,fleet_management,True,True,True,
+40,complex,fleet_management,False,True,True,
+41,complex,fleet_management,False,True,True,
+42,complex,fleet_management,False,False,False,"where_conditions differ: missing={('city', '=', 'newark')} extra={('name', '=', 'newark')}"
+43,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'stop-1002')} extra={('id', '=', '1002')}"
+44,easy,fleet_management,False,True,True,
+45,easy,gym_fitness_membership,False,True,True,
+46,easy,gym_fitness_membership,False,True,True,
+47,complex,gym_fitness_membership,False,True,True,
+48,complex,gym_fitness_membership,False,False,False,"where_conditions differ: missing={('format', '=', 'amrap'), ('format', '=', 'for time')} extra={('format', 'in', ""['for time', 'amrap']"")}"
+49,complex,gym_fitness_membership,False,True,True,
+50,complex,gym_fitness_membership,False,True,True,
+51,complex,it_helpdesk_asset_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+52,complex,it_helpdesk_asset_management,False,True,True,
+53,complex,it_helpdesk_asset_management,False,True,True,
+54,easy,it_helpdesk_asset_management,False,True,True,
+55,easy,it_helpdesk_asset_management,False,True,True,
+56,complex,law_firm_case_management,False,False,False,optional_match differs: gold=True pred=False
+57,complex,law_firm_case_management,False,True,True,
+58,complex,law_firm_case_management,False,True,True,
+59,complex,law_firm_case_management,False,True,True,
+60,easy,law_firm_case_management,False,True,True,
+61,medium,law_firm_case_management,False,True,True,
+62,medium,moving_logistics_company,False,False,False,"where_conditions differ: missing={('id', '=', 'car1')} extra={('name', '=', 'car1')}"
+63,easy,moving_logistics_company,False,True,True,
+64,complex,moving_logistics_company,False,True,True,
+65,complex,moving_logistics_company,False,False,False,"rel_types differ: gold=['CARRIED_BY', 'DISCHARGED_AT', 'PACKED_IN', 'SHIPS'] pred=['CARRIED_BY', 'LOADED_AT', 'PACKED_IN', 'SHIPS']"
+66,complex,moving_logistics_company,False,True,True,
+67,complex,moving_logistics_company,False,False,False,optional_match differs: gold=True pred=False
+68,complex,pest_control_services,False,True,True,
+69,complex,pest_control_services,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('agg', 'count:*')}"
+70,complex,pest_control_services,False,False,False,"where_conditions differ: missing={('activity_level', 'in', ""['moderate', 'high']"")} extra={('activity_level', '=', 'high'), ('activity_level', '=', 'moderate')}; return columns missing from prediction: {('prop', 'device_type'), ('prop', 'location_code')}"
+71,complex,pest_control_services,False,False,False,"labels differ: gold=['CorrectiveAction', 'Facility', 'Inspection', 'MonitoringDevice', 'PestActivity'] pred=['CorrectiveAction', 'Facility', 'MonitoringDevice', 'PestActivity']; rel_types differ: gold=['ADDRESSES', 'GENERATED', 'INSPECTED', 'INSTALLED_AT', 'RECORDED'] pred=['ADDRESSES', 'INSTALLED_AT', 'RECORDED']; hop_count differs: gold=5 pred=3"
+72,medium,pest_control_services,False,False,False,"where_conditions differ: missing={('inspection_type', 'in', ""['compliance audit', 'third-party audit']"")} extra={('inspection_type', '=', 'compliance audit'), ('inspection_type', '=', 'third-party audit')}"
+73,easy,pest_control_services,False,True,True,
+74,complex,photography_studio_management,False,False,True,"return columns missing from prediction: {('agg', 'sum:*')}"
+75,complex,photography_studio_management,False,True,True,
+76,complex,photography_studio_management,False,True,True,
+77,complex,photography_studio_management,False,True,True,
+78,easy,photography_studio_management,True,True,True,
+79,easy,photography_studio_management,False,True,True,
+80,complex,public_library_management,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['count']"
+81,complex,public_library_management,False,False,False,"where_conditions differ: missing={('amount_due', '>', '0')} extra=set()"
+82,complex,public_library_management,False,True,True,
+83,complex,public_library_management,False,True,True,
+84,easy,public_library_management,False,True,True,
+85,easy,public_library_management,False,True,True,
+86,complex,public_library_management,False,True,True,
+87,complex,public_library_management,False,True,True,
+88,complex,public_library_management,False,True,True,
+89,complex,public_library_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*'), ('prop', 'license_type')}"
+90,easy,public_library_management,False,True,True,
+91,easy,public_library_management,False,True,True,
+92,complex,saas_subscription_billing,False,False,False,"labels differ: gold=['MeteredSubscription', 'UsageMeter', 'UsageRecord'] pred=['UsageMeter', 'UsageRecord']; rel_types differ: gold=['RECORDED', 'TRACKS_METER'] pred=['RECORDED']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'unit_type')}"
+93,complex,saas_subscription_billing,False,True,True,
+94,complex,saas_subscription_billing,False,True,True,
+95,complex,saas_subscription_billing,False,True,True,
+96,easy,saas_subscription_billing,False,True,True,
+97,easy,saas_subscription_billing,False,True,True,
+98,complex,university_academic_records,False,False,False,"rel_types differ: gold=['COLLABORATES_WITH'] pred=[]; hop_count differs: gold=0 pred=1; where_conditions differ: missing={('name', '=', 'elena kim')} extra={('name', '=', 'dr. elena kim')}"
+99,complex,university_academic_records,False,True,True,
+100,complex,university_academic_records,False,True,True,
+101,complex,university_academic_records,False,False,False,aggregations differ: gold=['count'] pred=[]
+102,easy,university_academic_records,False,True,True,
+103,easy,university_academic_records,False,True,True,
+104,complex,wedding_event_planning,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+105,complex,wedding_event_planning,False,False,True,"return columns missing from prediction: {('prop', 'customer_type')}"
+106,complex,wedding_event_planning,False,False,False,"rel_types differ: gold=['BILLED_AS', 'PLACED', 'STORED_AT'] pred=['BILLED_AS', 'PLACED', 'RENTS', 'STORED_AT']; aggregations differ: gold=['collect', 'count', 'sum'] pred=['count', 'sum']; optional_match differs: gold=True pred=False; return columns missing from prediction: {('agg', 'sum:amount_due')}"
+107,complex,wedding_event_planning,False,True,True,
+108,easy,wedding_event_planning,False,True,True,
+109,easy,wedding_event_planning,False,True,True,
+110,easy,coworking_space_management,True,True,True,
+111,easy,coworking_space_management,True,True,True,
+112,easy,coworking_space_management,False,True,True,
+113,easy,coworking_space_management,False,True,True,
+114,medium,coworking_space_management,False,False,False,"rel_types differ: gold=['BILLED'] pred=['BILLED', 'PAID_BY']; return columns missing from prediction: {('agg', 'sum:amount_covered')}"
+115,easy,coworking_space_management,False,True,True,
+116,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Member'] pred=['Booking', 'Desk', 'Member']; rel_types differ: gold=['BOOKED'] pred=['BOOKED', 'FOR_DESK']; hop_count differs: gold=1 pred=2"
+117,easy,coworking_space_management,False,True,True,
+118,easy,coworking_space_management,False,True,True,
+119,easy,daycare_childcare_management,True,True,True,
+120,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'relationship')}"
+121,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+122,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'role')}"
+123,easy,daycare_childcare_management,False,True,True,
+124,easy,daycare_childcare_management,False,True,True,
+125,complex,daycare_childcare_management,False,True,True,
+126,complex,daycare_childcare_management,False,False,False,optional_match differs: gold=True pred=False
+127,easy,daycare_childcare_management,True,True,True,
+128,easy,ecommerce_order_fulfillment,False,True,True,
+129,medium,ecommerce_order_fulfillment,False,True,True,
+130,easy,ecommerce_order_fulfillment,False,True,True,
+131,easy,ecommerce_order_fulfillment,False,True,True,
+132,complex,ecommerce_order_fulfillment,False,False,False,"labels differ: gold=['QualityInspection', 'ReturnedItem'] pred=['QualityInspection', 'ReturnRequest', 'ReturnedItem']; rel_types differ: gold=['INSPECTED_BY'] pred=['INCLUDES_ITEM']; aggregations differ: gold=['count'] pred=[]; hop_count differs: gold=1 pred=2; optional_match differs: gold=True pred=False"
+133,easy,ecommerce_order_fulfillment,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+134,easy,ecommerce_order_fulfillment,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+135,easy,ecommerce_order_fulfillment,False,True,True,
+136,medium,ecommerce_order_fulfillment,False,True,True,
+137,easy,film_production_management,False,True,True,
+138,easy,film_production_management,False,True,True,
+139,easy,film_production_management,False,True,True,
+140,easy,film_production_management,False,True,True,
+141,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+142,complex,film_production_management,False,True,True,
+143,easy,film_production_management,False,True,True,
+144,easy,film_production_management,False,True,True,
+145,complex,film_production_management,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('expr', 'coalesce(sum(e.amount),0)')}"
+146,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'route-a1')} extra={('id', '=', 'r-a1')}"
+147,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'van-07')} extra={('id', '=', 'van-07')}"
+148,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'stop-1002')} extra={('sequence_number', '=', '1002')}"
+149,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'truck-12')} extra={('id', '=', 'truck-12')}"
+150,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'newark depot')} extra={('name', '=', 'newark')}"
+151,easy,fleet_management,False,True,True,
+152,complex,fleet_management,False,True,True,
+153,easy,fleet_management,False,True,True,
+154,easy,fleet_management,False,True,True,
+155,easy,gym_fitness_membership,False,True,True,
+156,easy,gym_fitness_membership,False,True,True,
+157,easy,gym_fitness_membership,False,True,True,
+158,medium,gym_fitness_membership,False,False,False,"labels differ: gold=['Movement', 'PersonalRecord'] pred=['Athlete', 'Movement', 'PersonalRecord']; rel_types differ: gold=['FOR_MOVEMENT'] pred=['ACHIEVED', 'FOR_MOVEMENT']; hop_count differs: gold=1 pred=2"
+159,easy,gym_fitness_membership,False,True,True,
+160,complex,gym_fitness_membership,False,True,True,
+161,easy,gym_fitness_membership,False,True,True,
+162,easy,gym_fitness_membership,True,True,True,
+163,medium,gym_fitness_membership,False,True,True,
+164,medium,it_helpdesk_asset_management,False,False,False,"labels differ: gold=['Application', 'Employee', 'SoftwareLicense'] pred=['Employee', 'SoftwareLicense']; rel_types differ: gold=['ASSIGNED_SEAT', 'LICENSES'] pred=['ASSIGNED_SEAT']; hop_count differs: gold=2 pred=1"
+165,easy,it_helpdesk_asset_management,False,True,True,
+166,easy,it_helpdesk_asset_management,True,True,True,
+167,easy,it_helpdesk_asset_management,False,True,True,
+168,easy,it_helpdesk_asset_management,False,True,True,
+169,easy,it_helpdesk_asset_management,False,True,True,
+170,easy,it_helpdesk_asset_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+171,complex,it_helpdesk_asset_management,False,True,True,
+172,complex,it_helpdesk_asset_management,True,True,True,
+173,easy,law_firm_case_management,False,True,True,
+174,easy,law_firm_case_management,False,True,True,
+175,easy,law_firm_case_management,False,True,True,
+176,easy,law_firm_case_management,False,True,True,
+177,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'outcome')}"
+178,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_type')}"
+179,easy,law_firm_case_management,True,True,True,
+180,easy,law_firm_case_management,False,True,True,
+181,medium,law_firm_case_management,False,True,True,
+182,easy,moving_logistics_company,True,True,True,
+183,easy,moving_logistics_company,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+184,easy,moving_logistics_company,False,True,True,
+185,easy,moving_logistics_company,False,True,True,
+186,medium,moving_logistics_company,False,True,True,
+187,easy,moving_logistics_company,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+188,complex,moving_logistics_company,False,True,True,
+189,easy,moving_logistics_company,False,False,True,"return columns missing from prediction: {('prop', 'mode')}"
+190,easy,moving_logistics_company,True,True,True,
+191,easy,pest_control_services,False,True,True,
+192,easy,pest_control_services,True,True,True,
+193,easy,pest_control_services,False,True,True,
+194,easy,pest_control_services,False,True,True,
+195,easy,pest_control_services,True,True,True,
+196,medium,pest_control_services,True,True,True,
+197,easy,pest_control_services,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+198,complex,pest_control_services,False,True,True,
+199,medium,pest_control_services,False,True,True,
+200,easy,photography_studio_management,False,True,True,
+201,easy,photography_studio_management,False,True,True,
+202,easy,photography_studio_management,False,True,True,
+203,easy,photography_studio_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+204,medium,photography_studio_management,False,True,True,
+205,medium,photography_studio_management,False,True,True,
+206,complex,photography_studio_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+207,easy,photography_studio_management,False,True,True,
+208,easy,photography_studio_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+209,easy,public_library_management,True,True,True,
+210,easy,public_library_management,False,True,True,
+211,easy,public_library_management,False,True,True,
+212,easy,public_library_management,False,True,True,
+213,easy,public_library_management,False,True,True,
+214,complex,public_library_management,False,True,True,
+215,easy,public_library_management,True,True,True,
+216,easy,public_library_management,False,True,True,
+217,easy,public_library_management,True,True,True,
+218,easy,public_library_management,True,True,True,
+219,easy,public_library_management,False,True,True,
+220,easy,public_library_management,False,True,True,
+221,easy,public_library_management,False,True,True,
+222,easy,public_library_management,False,False,False,"labels differ: gold=['AccessSession', 'Patron'] pred=['AccessSession']; rel_types differ: gold=['ACCESSED'] pred=[]; hop_count differs: gold=1 pred=0; return columns missing from prediction: {('prop', 'device_type')}"
+223,complex,public_library_management,False,True,True,
+224,medium,public_library_management,False,True,True,
+225,easy,public_library_management,False,True,True,
+226,easy,public_library_management,False,True,True,
+227,easy,saas_subscription_billing,False,False,False,"labels differ: gold=['Customer', 'MeteredSubscription', 'UsageMeter'] pred=['ProductFeature', 'UsageMeter']; rel_types differ: gold=['HAS_METERED_SUBSCRIPTION', 'TRACKS_METER'] pred=['MEASURES_FEATURE']; hop_count differs: gold=2 pred=1; where_conditions differ: missing={('name', '=', 'dataforge inc'), ('unit_type', '=', 'apicalls')} extra={('name', '=', 'dataforge')}"
+228,medium,saas_subscription_billing,False,True,True,
+229,easy,saas_subscription_billing,False,True,True,
+230,easy,saas_subscription_billing,False,False,False,"labels differ: gold=['OverageCharge', 'UsageRecord'] pred=['OverageCharge']; rel_types differ: gold=['TRIGGERED'] pred=[]; aggregations differ: gold=['sum'] pred=['count', 'sum']; hop_count differs: gold=1 pred=0; return columns missing from prediction: {('prop', 'waived')}"
+231,complex,saas_subscription_billing,False,True,True,
+232,easy,saas_subscription_billing,False,True,True,
+233,easy,saas_subscription_billing,True,True,True,
+234,easy,saas_subscription_billing,False,True,True,
+235,easy,saas_subscription_billing,False,False,True,"return columns missing from prediction: {('prop', 'unit_type')}"
+236,easy,university_academic_records,True,True,True,
+237,easy,university_academic_records,False,True,True,
+238,easy,university_academic_records,False,True,True,
+239,easy,university_academic_records,False,True,True,
+240,easy,university_academic_records,False,True,True,
+241,complex,university_academic_records,False,True,True,
+242,easy,university_academic_records,True,True,True,
+243,easy,university_academic_records,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+244,easy,university_academic_records,False,True,True,
+245,medium,wedding_event_planning,False,False,False,"where_conditions differ: missing={('name', '=', ""sarah's weddings co"")} extra={('name', '=', 'sarah')}"
+246,easy,wedding_event_planning,False,True,True,
+247,easy,wedding_event_planning,False,True,True,
+248,easy,wedding_event_planning,False,True,True,
+249,easy,wedding_event_planning,True,True,True,
+250,complex,wedding_event_planning,False,True,True,
+251,easy,wedding_event_planning,False,True,True,
+252,easy,wedding_event_planning,False,False,False,"where_conditions differ: missing=set() extra={('order_status', '=', 'reserved')}"
+253,easy,wedding_event_planning,False,True,True,
+254,easy,law_firm_case_management,False,True,True,
+255,easy,law_firm_case_management,False,True,True,
+256,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'location'), ('prop', 'jurisdiction')}"
+257,medium,law_firm_case_management,False,True,True,
+258,easy,photography_studio_management,False,True,True,
+259,easy,photography_studio_management,False,False,True,"return columns missing from prediction: {('prop', 'event_date')}"
+260,easy,photography_studio_management,False,True,True,
+261,easy,photography_studio_management,False,True,True,
+262,medium,coworking_space_management,False,False,False,"where_conditions differ: missing={('name', '=', 'downtown')} extra={('city', '=', 'downtown')}"
+263,easy,coworking_space_management,False,True,True,
+264,easy,coworking_space_management,False,True,True,
+265,easy,coworking_space_management,False,True,True,
+266,easy,law_firm_case_management,False,True,True,
+267,easy,law_firm_case_management,False,True,True,
+268,easy,law_firm_case_management,False,True,True,
+269,easy,law_firm_case_management,False,True,True,
+270,easy,photography_studio_management,False,True,True,
+271,easy,photography_studio_management,False,True,True,
+272,easy,photography_studio_management,False,False,False,"labels differ: gold=['Photographer'] pred=['Package', 'Photographer']; rel_types differ: gold=[] pred=['SPECIALIZES_IN']; hop_count differs: gold=0 pred=1; where_conditions differ: missing={('specialty', '=', 'portrait')} extra={('name', 'contains', 'portrait')}"
+273,easy,photography_studio_management,True,True,True,
+274,easy,coworking_space_management,False,True,True,
+275,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('bare', 'node'), ('prop', 'name')}"
+276,easy,coworking_space_management,False,True,True,
+277,easy,coworking_space_management,False,True,True,
+278,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+279,easy,coworking_space_management,False,True,True,
+280,easy,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location', 'Member'] pred=['Booking', 'Desk', 'Location']; rel_types differ: gold=['BOOKED', 'FOR_DESK', 'LOCATED_IN'] pred=['FOR_DESK', 'LOCATED_IN']; hop_count differs: gold=3 pred=2; where_conditions differ: missing={('name', '=', 'downtown')} extra={('city', '=', 'downtown')}"
+281,easy,coworking_space_management,False,True,True,
+282,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+283,easy,coworking_space_management,False,True,True,
+284,easy,coworking_space_management,False,False,False,"rel_types differ: gold=[] pred=['VALID_AT']; return columns missing from prediction: {('prop', 'name')}"
+285,easy,daycare_childcare_management,False,True,True,
+286,easy,daycare_childcare_management,False,True,True,
+287,easy,daycare_childcare_management,False,True,True,
+288,easy,daycare_childcare_management,True,True,True,
+289,easy,daycare_childcare_management,False,True,True,
+290,easy,daycare_childcare_management,False,True,True,
+291,easy,daycare_childcare_management,False,True,True,
+292,easy,daycare_childcare_management,True,True,True,
+293,easy,daycare_childcare_management,False,True,True,
+294,easy,fleet_management,False,True,True,
+295,easy,fleet_management,False,True,True,
+296,easy,fleet_management,False,False,True,"return columns missing from prediction: {('bare', 'node'), ('prop', 'name')}"
+297,easy,fleet_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+298,easy,fleet_management,False,False,False,"where_conditions differ: missing=set() extra={('delivery_outcome', '=', 'delivered')}"
+299,easy,fleet_management,False,True,True,
+300,easy,fleet_management,False,False,False,"where_conditions differ: missing={('name', '=', 'rt-2045')} extra={('id', '=', 'rt-2045')}"
+301,easy,fleet_management,False,True,True,
+302,easy,fleet_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+303,easy,fleet_management,False,True,True,
+304,easy,law_firm_case_management,False,True,True,
+305,easy,law_firm_case_management,False,True,True,
+306,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+307,easy,law_firm_case_management,False,True,True,
+308,easy,law_firm_case_management,False,True,True,
+309,easy,law_firm_case_management,False,True,True,
+310,easy,law_firm_case_management,False,True,True,
+311,easy,law_firm_case_management,False,True,True,
+312,easy,law_firm_case_management,False,True,True,
+313,easy,law_firm_case_management,False,True,True,
+314,easy,law_firm_case_management,False,True,True,
+315,easy,pest_control_services,False,True,True,
+316,easy,pest_control_services,False,True,True,
+317,easy,pest_control_services,False,True,True,
+318,easy,pest_control_services,False,True,True,
+319,easy,pest_control_services,False,True,True,
+320,easy,pest_control_services,False,True,True,
+321,easy,pest_control_services,False,True,True,
+322,easy,pest_control_services,False,True,True,
+323,easy,pest_control_services,False,True,True,
+324,easy,pest_control_services,False,True,True,
+325,easy,pest_control_services,False,True,True,
+326,easy,pest_control_services,True,True,True,
+327,easy,photography_studio_management,False,True,True,
+328,easy,photography_studio_management,False,True,True,
+329,medium,photography_studio_management,False,True,True,
+330,complex,photography_studio_management,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('bare', 'node')}"
+331,easy,photography_studio_management,False,True,True,
+332,easy,photography_studio_management,False,True,True,
+333,easy,photography_studio_management,False,True,True,
+334,easy,photography_studio_management,False,False,True,"return columns missing from prediction: {('bare', 'node'), ('prop', 'name')}"
+335,easy,photography_studio_management,False,True,True,
+336,easy,photography_studio_management,False,True,True,
+337,easy,photography_studio_management,False,True,True,
+338,easy,public_library_management,False,True,True,
+339,easy,public_library_management,False,True,True,
+340,easy,public_library_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+341,easy,public_library_management,False,True,True,
+342,easy,public_library_management,False,True,True,
+343,easy,public_library_management,False,True,True,
+344,easy,public_library_management,False,False,True,"return columns missing from prediction: {('bare', 'node'), ('prop', 'subject_category')}"
+345,easy,public_library_management,False,True,True,
+346,medium,public_library_management,False,True,True,
+347,easy,university_academic_records,False,True,True,
+348,easy,university_academic_records,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+349,easy,university_academic_records,False,True,True,
+350,easy,university_academic_records,False,True,True,
+351,easy,university_academic_records,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+352,easy,university_academic_records,False,False,True,"return columns missing from prediction: {('prop', 'grant_number')}"
+353,easy,university_academic_records,False,False,False,"where_conditions differ: missing={('acronym', '=', 'ips2023')} extra={('name', '=', 'ips2023')}; return columns missing from prediction: {('prop', 'name')}"
+354,easy,university_academic_records,False,True,True,
+355,medium,university_academic_records,False,False,False,"rel_types differ: gold=['CONDUCTED_BY'] pred=['CONDUCTED_BY', 'FUNDS']"
+356,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'certification_level')}"
+357,easy,pest_control_services,False,True,True,
+358,easy,pest_control_services,False,False,True,"return columns missing from prediction: {('prop', 'catch_count')}"
+359,easy,saas_subscription_billing,False,True,True,
+360,easy,saas_subscription_billing,False,False,False,"where_conditions differ: missing={('severity', 'in', ""['critical','high']"")} extra={('severity', 'in', ""['critical', 'high']"")}"
+361,medium,daycare_childcare_management,False,True,True,
+362,easy,daycare_childcare_management,False,True,True,
+363,easy,daycare_childcare_management,False,True,True,
+364,medium,daycare_childcare_management,False,True,True,
+365,easy,public_library_management,False,False,False,"labels differ: gold=['Hold', 'Patron'] pred=['Hold']; hop_count differs: gold=1 pred=0"
+366,easy,public_library_management,False,False,True,"return columns missing from prediction: {('bare', 'node'), ('agg', 'sum:*')}"
+367,easy,public_library_management,False,True,True,
+368,complex,daycare_childcare_management,False,True,True,
+369,complex,daycare_childcare_management,False,True,True,
+370,complex,daycare_childcare_management,False,True,True,
+371,complex,public_library_management,False,True,True,
+372,complex,public_library_management,False,False,False,"where_conditions differ: missing=set() extra={('vendor_type', '=', 'used bookseller')}"
+373,medium,university_academic_records,False,True,True,
+374,medium,university_academic_records,False,False,False,rel_types differ: gold=['COLLABORATES_WITH'] pred=[]; hop_count differs: gold=1 pred=0
+375,complex,university_academic_records,False,False,False,rel_types differ: gold=['COLLABORATES_WITH'] pred=[]
+376,complex,university_academic_records,False,False,False,hop_count differs: gold=2 pred=1; varlen differs: gold=True pred=False
+377,complex,university_academic_records,False,False,False,rel_types differ: gold=['COLLABORATES_WITH'] pred=[]
+378,easy,coworking_space_management,True,True,True,
+379,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'monthly_price')}"
+380,easy,coworking_space_management,False,True,True,
+381,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'payment_date')}"
+382,medium,coworking_space_management,False,True,True,
+383,easy,coworking_space_management,True,True,True,
+384,easy,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Member'] pred=['Booking', 'Desk', 'Member']; rel_types differ: gold=['BOOKED'] pred=['BOOKED', 'FOR_DESK']; hop_count differs: gold=1 pred=2; where_conditions differ: missing=set() extra={('name', '=', 'alicia wong')}"
+385,easy,coworking_space_management,False,True,True,
+386,easy,coworking_space_management,False,True,True,
+387,easy,coworking_space_management,False,False,False,"where_conditions differ: missing=set() extra={('name', '=', 'alicia wong')}"
+388,easy,coworking_space_management,False,True,True,
+389,easy,coworking_space_management,False,True,True,
+390,easy,coworking_space_management,False,False,False,"where_conditions differ: missing=set() extra={('name', '=', 'alicia wong')}"
+391,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+392,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+393,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+394,easy,coworking_space_management,True,True,True,
+395,easy,coworking_space_management,False,True,True,
+396,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+397,easy,coworking_space_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'due_date')}"
+398,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'email')}"
+399,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+400,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'industry')}"
+401,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+402,easy,coworking_space_management,True,True,True,
+403,easy,coworking_space_management,False,True,True,
+404,medium,coworking_space_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'amount_due')}"
+405,medium,coworking_space_management,False,False,False,hop_count differs: gold=3 pred=2
+406,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'booking_date')}"
+407,easy,coworking_space_management,False,True,True,
+408,medium,coworking_space_management,False,True,True,
+409,complex,coworking_space_management,False,False,False,rel_types differ: gold=[] pred=['VALID_AT']
+410,medium,coworking_space_management,False,True,True,
+411,complex,coworking_space_management,False,True,True,
+412,medium,coworking_space_management,False,True,True,
+413,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""'basic_no_renew'""), ('expr', ""'recent_seat_assignment'"")}"
+414,medium,coworking_space_management,False,True,True,
+415,complex,coworking_space_management,False,False,False,rel_types differ: gold=['SUBSCRIBES_TO'] pred=[]
+416,medium,coworking_space_management,False,True,True,
+417,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+418,complex,coworking_space_management,False,False,False,"where_conditions differ: missing=set() extra={('amount_due', '>', '0')}; return columns missing from prediction: {('expr', 'coalesce(total_paid,0)')}"
+419,medium,coworking_space_management,False,False,False,"rel_types differ: gold=['SUBSCRIBES_TO'] pred=['SUBSCRIBES_TO', 'VALID_AT']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'access_hours'), ('prop', 'name')}"
+420,medium,coworking_space_management,False,True,True,
+421,medium,coworking_space_management,False,True,True,
+422,medium,coworking_space_management,False,True,True,
+423,medium,coworking_space_management,False,True,True,
+424,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location', 'Member'] pred=['Booking', 'Desk', 'Location']; rel_types differ: gold=['BOOKED', 'FOR_DESK', 'LOCATED_IN'] pred=['FOR_DESK', 'LOCATED_IN']; hop_count differs: gold=3 pred=2"
+425,complex,coworking_space_management,True,True,True,
+426,complex,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED', 'PAID_BY'] pred=['PAID_BY']; aggregations differ: gold=[] pred=['count']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+427,complex,coworking_space_management,False,True,True,
+428,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'booking_date')}"
+429,medium,coworking_space_management,False,False,False,optional_match differs: gold=False pred=True
+430,complex,coworking_space_management,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('agg', 'sum:amount_due'), ('agg', 'count:*')}"
+431,complex,coworking_space_management,False,False,False,"rel_types differ: gold=['WORKS_FOR'] pred=[]; return columns missing from prediction: {('prop', 'seat_count')}"
+432,complex,coworking_space_management,False,False,False,"hop_count differs: gold=3 pred=4; where_conditions differ: missing=set() extra={('membership_tier', '<>', 'enterprise')}"
+433,complex,coworking_space_management,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('agg', 'count:*')}"
+434,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+435,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'membership_tier')}"
+436,complex,coworking_space_management,False,False,False,"where_conditions differ: missing={('industry', '=', 'technology')} extra={('industry', 'contains', 'technology')}"
+437,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('agg', 'sum:*'), ('agg', 'sum:amount_paid')}"
+438,medium,coworking_space_management,False,True,True,
+439,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'desk_type')}"
+440,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Company', 'Member'] pred=['Booking', 'Company', 'Desk', 'Member']; rel_types differ: gold=['BOOKED', 'WORKS_FOR'] pred=['BOOKED', 'FOR_DESK', 'WORKS_FOR']; hop_count differs: gold=2 pred=3"
+441,complex,coworking_space_management,False,True,True,
+442,complex,coworking_space_management,False,True,True,
+443,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location'] pred=['Booking', 'Desk']; rel_types differ: gold=['FOR_DESK', 'LOCATED_IN'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1"
+444,medium,coworking_space_management,False,False,False,"aggregations differ: gold=['collect'] pred=[]; return columns missing from prediction: {('agg', 'collect:city')}"
+445,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+446,medium,coworking_space_management,False,True,True,
+447,medium,coworking_space_management,False,True,True,
+448,medium,coworking_space_management,False,True,True,
+449,medium,coworking_space_management,False,True,True,
+450,medium,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED', 'PAID_BY'] pred=['PAID_BY']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'amount_paid'), ('prop', 'name')}"
+451,medium,coworking_space_management,False,True,True,
+452,medium,coworking_space_management,False,True,True,
+453,medium,coworking_space_management,True,True,True,
+454,medium,coworking_space_management,False,True,True,
+455,medium,coworking_space_management,False,True,True,
+456,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['BOOKED', 'FOR_DESK'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'booking_date'), ('prop', 'name')}"
+457,medium,coworking_space_management,False,True,True,
+458,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'invoice_number')}"
+459,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Location', 'Member', 'MembershipPlan'] pred=['Booking', 'Desk', 'Location', 'Member', 'MembershipPlan']; rel_types differ: gold=['BOOKED', 'SUBSCRIBES_TO', 'VALID_AT'] pred=['BOOKED', 'FOR_DESK', 'LOCATED_IN', 'SUBSCRIBES_TO', 'VALID_AT']; hop_count differs: gold=3 pred=5"
+460,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'desk_type')}"
+461,medium,coworking_space_management,False,True,True,
+462,medium,coworking_space_management,False,True,True,
+463,medium,coworking_space_management,False,True,True,
+464,medium,coworking_space_management,False,True,True,
+465,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['BOOKED', 'FOR_DESK'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1"
+466,medium,coworking_space_management,False,True,True,
+467,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location', 'Member'] pred=['Booking', 'Desk', 'Location']; rel_types differ: gold=['BOOKED', 'FOR_DESK', 'LOCATED_IN'] pred=['FOR_DESK', 'LOCATED_IN']; hop_count differs: gold=3 pred=2"
+468,medium,coworking_space_management,False,True,True,
+469,medium,coworking_space_management,True,True,True,
+470,medium,coworking_space_management,False,True,True,
+471,medium,coworking_space_management,False,True,True,
+472,medium,coworking_space_management,False,True,True,
+473,medium,coworking_space_management,False,True,True,
+474,medium,coworking_space_management,False,True,True,
+475,medium,coworking_space_management,False,True,True,
+476,medium,coworking_space_management,False,True,True,
+477,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['BOOKED', 'FOR_DESK'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1"
+478,medium,coworking_space_management,False,True,True,
+479,medium,coworking_space_management,False,False,False,"where_conditions differ: missing={('industry', '=', 'technology')} extra={('industry', 'contains', 'technology')}"
+480,medium,coworking_space_management,True,True,True,
+481,medium,coworking_space_management,True,True,True,
+482,medium,coworking_space_management,False,True,True,
+483,medium,coworking_space_management,True,True,True,
+484,medium,coworking_space_management,False,True,True,
+485,medium,coworking_space_management,True,True,True,
+486,medium,coworking_space_management,False,True,True,
+487,medium,coworking_space_management,False,True,True,
+488,medium,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED', 'PAID_BY'] pred=['PAID_BY']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+489,medium,coworking_space_management,False,True,True,
+490,medium,coworking_space_management,True,True,True,
+491,medium,coworking_space_management,True,True,True,
+492,medium,coworking_space_management,False,True,True,
+493,medium,coworking_space_management,False,True,True,
+494,medium,coworking_space_management,False,True,True,
+495,medium,coworking_space_management,False,True,True,
+496,medium,coworking_space_management,False,True,True,
+497,medium,coworking_space_management,False,True,True,
+498,medium,coworking_space_management,False,True,True,
+499,medium,coworking_space_management,False,True,True,
+500,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location'] pred=['Booking', 'Desk']; rel_types differ: gold=['FOR_DESK', 'LOCATED_IN'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'desk_number'), ('prop', 'city')}"
+501,medium,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED', 'PAID_BY'] pred=['PAID_BY']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+502,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+503,medium,coworking_space_management,False,False,False,"where_conditions differ: missing=set() extra={('city', '=', 'austin')}"
+504,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'invoice_number')}"
+505,medium,coworking_space_management,False,True,True,
+506,medium,coworking_space_management,False,True,True,
+507,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'desk_number'), ('prop', 'city')}"
+508,complex,coworking_space_management,False,False,False,"where_conditions differ: missing={('seat_count', '>', '50'), ('billing_cycle', '=', 'annual')} extra=set(); return columns missing from prediction: {('expr', '""company""'), ('expr', '""member""')}"
+509,complex,coworking_space_management,False,True,True,
+510,medium,coworking_space_management,False,True,True,
+511,medium,coworking_space_management,False,True,True,
+512,complex,coworking_space_management,False,False,False,"aggregations differ: gold=['count'] pred=[]; return columns missing from prediction: {('prop', 'email')}"
+513,medium,coworking_space_management,False,True,True,
+514,medium,coworking_space_management,False,True,True,
+515,complex,coworking_space_management,False,False,False,"rel_types differ: gold=['SUBSCRIBES_TO'] pred=[]; where_conditions differ: missing=set() extra={('auto_renew', '=', 'true')}"
+516,complex,coworking_space_management,False,True,True,
+517,medium,coworking_space_management,False,False,False,"where_conditions differ: missing={('payment_method', '=', 'bank transfer')} extra=set(); return columns missing from prediction: {('expr', '""invoice""'), ('expr', '""payment""')}"
+518,complex,coworking_space_management,False,False,False,optional_match differs: gold=False pred=True
+519,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'amount_paid'), ('prop', 'invoice_number')}"
+520,complex,coworking_space_management,False,False,False,aggregations differ: gold=['count'] pred=[]
+521,medium,coworking_space_management,False,True,True,
+522,complex,coworking_space_management,False,True,True,
+523,complex,coworking_space_management,False,False,False,"rel_types differ: gold=['BOOKED', 'FOR_DESK', 'LOCATED_IN', 'SUBSCRIBES_TO'] pred=['BOOKED', 'FOR_DESK', 'SUBSCRIBES_TO']; hop_count differs: gold=5 pred=4; return columns missing from prediction: {('prop', 'booking_date')}"
+524,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Member'] pred=['Booking', 'Desk', 'Member']; rel_types differ: gold=['BOOKED'] pred=['BOOKED', 'FOR_DESK']; hop_count differs: gold=1 pred=2"
+525,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', 'total_duewheretotal_due>1000returnco.name')}"
+526,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""'high_invoice'""), ('expr', ""'no_auto_renew'"")}"
+527,complex,coworking_space_management,False,False,False,aggregations differ: gold=['count'] pred=[]
+528,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', 'co.seat_count-assigned_members')}"
+529,complex,coworking_space_management,False,True,True,
+530,complex,coworking_space_management,False,True,True,
+531,complex,coworking_space_management,False,True,True,
+532,complex,coworking_space_management,False,False,False,"where_conditions differ: missing={('amount_paid', '>', '0')} extra=set()"
+533,complex,coworking_space_management,False,False,False,"rel_types differ: gold=['BILLED'] pred=['BILLED', 'SUBSCRIBES_TO']; return columns missing from prediction: {('prop', 'auto_renew')}"
+534,complex,coworking_space_management,False,True,True,
+535,medium,coworking_space_management,False,True,True,
+536,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'plan_type')}"
+537,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'invoice_number')}"
+538,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'industry')}"
+539,complex,coworking_space_management,False,True,True,
+540,complex,coworking_space_management,False,True,True,
+541,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'amount_due')}"
+542,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'monthly_price'), ('agg', 'collect:city')}"
+543,medium,coworking_space_management,False,True,True,
+544,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'desk_number')}"
+545,medium,coworking_space_management,False,True,True,
+546,medium,coworking_space_management,False,True,True,
+547,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['BOOKED', 'FOR_DESK'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1"
+548,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""'membershipplan'""), ('prop', 'name')}"
+549,complex,coworking_space_management,False,True,True,
+550,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['BOOKED', 'FOR_DESK'] pred=['FOR_DESK']; hop_count differs: gold=2 pred=1"
+551,medium,coworking_space_management,False,True,True,
+552,medium,coworking_space_management,False,True,True,
+553,medium,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'amount_covered'), ('prop', 'name')}"
+554,medium,coworking_space_management,False,True,True,
+555,medium,coworking_space_management,False,False,False,"rel_types differ: gold=['SUBSCRIBES_TO'] pred=[]; return columns missing from prediction: {('prop', 'seat_assigned_date')}"
+556,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location', 'Member'] pred=['Booking', 'Desk', 'Location']; rel_types differ: gold=['BOOKED', 'FOR_DESK', 'LOCATED_IN'] pred=['FOR_DESK', 'LOCATED_IN']; hop_count differs: gold=3 pred=2"
+557,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['LOCATED_IN'] pred=[]; hop_count differs: gold=3 pred=1; return columns missing from prediction: {('prop', 'city'), ('prop', 'name')}"
+558,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'valid_from')}"
+559,medium,coworking_space_management,False,True,True,
+560,medium,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'payment_method'), ('prop', 'name')}"
+561,medium,coworking_space_management,False,True,True,
+562,medium,coworking_space_management,False,False,False,"labels differ: gold=['Company', 'Location', 'Member', 'MembershipPlan'] pred=['Location', 'Member', 'MembershipPlan']; hop_count differs: gold=3 pred=2"
+563,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+564,medium,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Location'] pred=['Booking', 'Desk']; rel_types differ: gold=['LOCATED_IN'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'city')}"
+565,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+566,medium,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'amount_covered'), ('prop', 'invoice_number')}"
+567,complex,coworking_space_management,False,True,True,
+568,complex,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+569,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""'auto_renew_subscription'"")}"
+570,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'plan_type')}"
+571,medium,coworking_space_management,False,True,True,
+572,medium,coworking_space_management,False,True,True,
+573,complex,coworking_space_management,False,True,True,
+574,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+575,complex,coworking_space_management,False,False,False,optional_match differs: gold=False pred=True
+576,complex,coworking_space_management,False,True,True,
+577,medium,coworking_space_management,False,True,True,
+578,complex,coworking_space_management,False,True,True,
+579,complex,coworking_space_management,False,True,True,
+580,complex,coworking_space_management,False,False,False,"rel_types differ: gold=['BILLED'] pred=['BILLED', 'PAID_BY']; aggregations differ: gold=['sum'] pred=['count', 'sum']; return columns missing from prediction: {('agg', 'sum:amount_covered'), ('prop', 'name')}"
+581,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+582,complex,coworking_space_management,False,False,False,"labels differ: gold=['Invoice', 'Member', 'Payment'] pred=['Invoice', 'Payment']; rel_types differ: gold=['BILLED'] pred=[]; hop_count differs: gold=2 pred=1"
+583,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""'floor1'"")}"
+584,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city'), ('prop', 'amount_due')}"
+585,complex,coworking_space_management,False,True,True,
+586,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+587,complex,coworking_space_management,False,False,False,"labels differ: gold=['Booking', 'Desk', 'Member'] pred=['Booking', 'Desk']; rel_types differ: gold=['FOR_DESK'] pred=[]; hop_count differs: gold=2 pred=1"
+588,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""'largepaymentcoverage'"")}"
+589,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('expr', ""l.citywherec.seat_count>50andva.access_hours='24/7'returndistinctm.name"")}"
+590,complex,coworking_space_management,False,False,False,"labels differ: gold=['Company', 'Member', 'MembershipPlan'] pred=['Company', 'Location', 'Member', 'MembershipPlan']; rel_types differ: gold=['WORKS_FOR'] pred=['VALID_AT', 'WORKS_FOR']; hop_count differs: gold=2 pred=3"
+591,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*'), ('prop', 'desk_type')}"
+592,complex,coworking_space_management,False,True,True,
+593,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name'), ('expr', ""l.cityunionmatch(l:location)<-[:located_in]-(d:desk)whered.desk_type='shared'andd.floor>=2returndistinctl.name"")}"
+594,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'plan_type')}"
+595,easy,daycare_childcare_management,False,True,True,
+596,easy,daycare_childcare_management,False,True,True,
+597,easy,daycare_childcare_management,False,True,True,
+598,easy,daycare_childcare_management,False,True,True,
+599,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+600,easy,daycare_childcare_management,True,True,True,
+601,easy,daycare_childcare_management,True,True,True,
+602,easy,daycare_childcare_management,True,True,True,
+603,easy,daycare_childcare_management,False,True,True,
+604,easy,daycare_childcare_management,True,True,True,
+605,easy,daycare_childcare_management,True,True,True,
+606,easy,daycare_childcare_management,True,True,True,
+607,easy,daycare_childcare_management,True,True,True,
+608,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'schedule_type')}"
+609,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'schedule_type')}"
+610,easy,daycare_childcare_management,True,True,True,
+611,easy,daycare_childcare_management,True,True,True,
+612,easy,daycare_childcare_management,True,True,True,
+613,easy,daycare_childcare_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'role')}"
+614,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'name'), ('prop', 'start_date')}"
+615,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+616,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'relationship')}"
+617,easy,daycare_childcare_management,False,False,False,"where_conditions differ: missing=set() extra={('enrollment_status', '=', 'enrolled')}; return columns missing from prediction: {('agg', 'count:*'), ('prop', 'name')}"
+618,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('agg', 'sum:capacity')}"
+619,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('agg', 'avg:tuition_rate')}"
+620,medium,daycare_childcare_management,False,True,True,
+621,medium,daycare_childcare_management,False,True,True,
+622,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'allergies')}"
+623,medium,daycare_childcare_management,False,True,True,
+624,easy,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+625,medium,daycare_childcare_management,False,True,True,
+626,easy,daycare_childcare_management,False,True,True,
+627,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+628,medium,daycare_childcare_management,False,True,True,
+629,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+630,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+631,medium,daycare_childcare_management,False,False,False,"where_conditions differ: missing=set() extra={('role', '=', 'lead teacher'), ('role', '=', 'assistant teacher')}; return columns missing from prediction: {('prop', 'room_number')}"
+632,complex,daycare_childcare_management,False,True,True,
+633,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Classroom', 'Staff'] pred=['AttendanceLog', 'Child', 'EnrollmentRecord', 'Staff']"
+634,complex,daycare_childcare_management,False,True,True,
+635,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+636,complex,daycare_childcare_management,False,True,True,
+637,complex,daycare_childcare_management,False,True,True,
+638,complex,daycare_childcare_management,False,False,False,aggregations differ: gold=['collect'] pred=[]; hop_count differs: gold=2 pred=4; union differs: gold=False pred=True
+639,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+640,medium,daycare_childcare_management,False,True,True,
+641,complex,daycare_childcare_management,False,True,True,
+642,complex,daycare_childcare_management,False,True,True,
+643,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Child', 'Guardian'] pred=['Child', 'EnrollmentRecord', 'Guardian']; rel_types differ: gold=['GUARDIAN_OF'] pred=['GUARDIAN_OF', 'HAS_ENROLLMENT']; hop_count differs: gold=1 pred=2; return columns missing from prediction: {('bare', 'node')}"
+644,complex,daycare_childcare_management,False,False,False,"aggregations differ: gold=['count'] pred=[]; return columns missing from prediction: {('prop', 'room_number')}"
+645,complex,daycare_childcare_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+646,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'role')}"
+647,medium,daycare_childcare_management,True,True,True,
+648,medium,daycare_childcare_management,False,False,False,aggregations differ: gold=[] pred=['sum']
+649,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+650,medium,daycare_childcare_management,False,True,True,
+651,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number'), ('prop', 'role')}"
+652,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+653,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+654,medium,daycare_childcare_management,False,True,True,
+655,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+656,medium,daycare_childcare_management,False,True,True,
+657,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'phone')}"
+658,medium,daycare_childcare_management,False,True,True,
+659,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+660,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Classroom', 'Staff'] pred=['AttendanceLog', 'Classroom', 'Staff']; rel_types differ: gold=['CHECKED_IN', 'ENROLLED_IN', 'HAS_ATTENDANCE'] pred=['CHECKED_IN', 'HAS_ATTENDANCE']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'room_number')}"
+661,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'phone')}"
+662,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+663,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+664,medium,daycare_childcare_management,False,False,False,"where_conditions differ: missing={('relationship', 'not_in', ""['mother', 'father']"")} extra={('relationship', '<>', 'mother'), ('relationship', '<>', 'father')}"
+665,medium,daycare_childcare_management,False,False,False,"where_conditions differ: missing=set() extra={('tuition_rate', '>', '800')}"
+666,medium,daycare_childcare_management,False,True,True,
+667,medium,daycare_childcare_management,False,True,True,
+668,medium,daycare_childcare_management,False,True,True,
+669,medium,daycare_childcare_management,False,True,True,
+670,medium,daycare_childcare_management,False,True,True,
+671,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Child', 'Classroom', 'Guardian'] pred=['Child', 'Guardian']; rel_types differ: gold=['ENROLLED_IN', 'GUARDIAN_OF'] pred=['GUARDIAN_OF']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'room_number')}"
+672,medium,daycare_childcare_management,False,True,True,
+673,medium,daycare_childcare_management,False,True,True,
+674,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+675,medium,daycare_childcare_management,False,True,True,
+676,medium,daycare_childcare_management,False,True,True,
+677,medium,daycare_childcare_management,False,True,True,
+678,medium,daycare_childcare_management,False,True,True,
+679,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'license_number')}"
+680,medium,daycare_childcare_management,False,True,True,
+681,medium,daycare_childcare_management,False,True,True,
+682,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'relationship')}"
+683,medium,daycare_childcare_management,False,True,True,
+684,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'capacity')}"
+685,medium,daycare_childcare_management,False,True,True,
+686,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+687,medium,daycare_childcare_management,False,True,True,
+688,medium,daycare_childcare_management,False,True,True,
+689,medium,daycare_childcare_management,False,True,True,
+690,medium,daycare_childcare_management,True,True,True,
+691,medium,daycare_childcare_management,False,True,True,
+692,medium,daycare_childcare_management,False,True,True,
+693,medium,daycare_childcare_management,False,True,True,
+694,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+695,medium,daycare_childcare_management,False,False,False,"rel_types differ: gold=['LOCATED_AT', 'TEACHES_IN'] pred=['EMPLOYED_AT', 'TEACHES_IN']"
+696,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'capacity')}"
+697,medium,daycare_childcare_management,False,True,True,
+698,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'email')}"
+699,medium,daycare_childcare_management,False,False,False,"rel_types differ: gold=['ENROLLED_IN', 'HAS_ENROLLMENT', 'LOCATED_AT'] pred=['HAS_ENROLLMENT', 'LOCATED_AT', 'TEACHES_IN']"
+700,medium,daycare_childcare_management,False,True,True,
+701,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+702,medium,daycare_childcare_management,False,False,False,"rel_types differ: gold=['EMPLOYED_AT', 'TEACHES_IN'] pred=['EMPLOYED_AT', 'LOCATED_AT', 'TEACHES_IN']; hop_count differs: gold=2 pred=3; return columns missing from prediction: {('prop', 'room_number')}"
+703,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'schedule_type')}"
+704,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+705,medium,daycare_childcare_management,False,True,True,
+706,medium,daycare_childcare_management,False,True,True,
+707,medium,daycare_childcare_management,False,True,True,
+708,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Classroom', 'Staff'] pred=['Center', 'Classroom']; rel_types differ: gold=['LOCATED_AT', 'TEACHES_IN'] pred=['LOCATED_AT']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'room_number')}"
+709,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Classroom'] pred=['AttendanceLog', 'Child']; rel_types differ: gold=['ENROLLED_IN', 'HAS_ATTENDANCE'] pred=['HAS_ATTENDANCE']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'room_number')}"
+710,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+711,medium,daycare_childcare_management,False,False,False,"where_conditions differ: missing=set() extra={('enrollment_status', '=', 'enrolled')}; return columns missing from prediction: {('prop', 'room_number')}"
+712,medium,daycare_childcare_management,False,False,False,"where_conditions differ: missing={('relationship', 'not_in', ""['mother', 'father']"")} extra={('relationship', '<>', 'mother'), ('relationship', '<>', 'father')}; return columns missing from prediction: {('prop', 'relationship')}"
+713,medium,daycare_childcare_management,False,True,True,
+714,medium,daycare_childcare_management,False,True,True,
+715,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Child', 'Classroom', 'EnrollmentRecord'] pred=['Child', 'EnrollmentRecord']; rel_types differ: gold=['ENROLLED_IN', 'HAS_ENROLLMENT'] pred=['HAS_ENROLLMENT']; hop_count differs: gold=2 pred=1; where_conditions differ: missing={('enrollment_status', '<>', 'waitlisted')} extra={('enrollment_status', '=', 'enrolled')}; return columns missing from prediction: {('prop', 'room_number')}"
+716,medium,daycare_childcare_management,False,True,True,
+717,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'email')}"
+718,medium,daycare_childcare_management,False,False,False,"where_conditions differ: missing=set() extra={('enrollment_status', '=', 'enrolled')}"
+719,medium,daycare_childcare_management,False,True,True,
+720,medium,daycare_childcare_management,False,True,True,
+721,medium,daycare_childcare_management,False,True,True,
+722,medium,daycare_childcare_management,False,True,True,
+723,complex,daycare_childcare_management,False,False,False,aggregations differ: gold=[] pred=['count']
+724,medium,daycare_childcare_management,False,True,True,
+725,complex,daycare_childcare_management,False,True,True,
+726,complex,daycare_childcare_management,False,True,True,
+727,complex,daycare_childcare_management,False,False,False,optional_match differs: gold=False pred=True
+728,complex,daycare_childcare_management,False,False,False,optional_match differs: gold=True pred=False
+729,complex,daycare_childcare_management,False,True,True,
+730,complex,daycare_childcare_management,False,True,True,
+731,medium,daycare_childcare_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; union differs: gold=True pred=False; where_conditions differ: missing=set() extra={('capacity', '>', '20')}; return columns missing from prediction: {('expr', ""'high_capacity'""), ('expr', ""'no_staff'"")}"
+732,medium,daycare_childcare_management,False,True,True,
+733,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Classroom', 'Staff'] pred=['Classroom', 'Staff']; rel_types differ: gold=['EMPLOYED_AT', 'TEACHES_IN'] pred=['TEACHES_IN']; hop_count differs: gold=2 pred=1"
+734,complex,daycare_childcare_management,False,True,True,
+735,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', 'director_countwheredirector_count<>0returnctr.name')}"
+736,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+737,medium,daycare_childcare_management,False,True,True,
+738,complex,daycare_childcare_management,False,False,False,optional_match differs: gold=True pred=False
+739,complex,daycare_childcare_management,False,False,False,"rel_types differ: gold=['CHECKED_IN', 'EMPLOYED_AT', 'ENROLLED_IN', 'HAS_ATTENDANCE', 'LOCATED_AT'] pred=['CHECKED_IN', 'ENROLLED_IN', 'HAS_ATTENDANCE', 'LOCATED_AT']; hop_count differs: gold=5 pred=4"
+740,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Classroom'] pred=['AttendanceLog', 'Child']; rel_types differ: gold=['ENROLLED_IN', 'HAS_ATTENDANCE'] pred=['HAS_ATTENDANCE']; aggregations differ: gold=[] pred=['count']; hop_count differs: gold=2 pred=1; where_conditions differ: missing=set() extra={('enrollment_status', '=', 'enrolled')}"
+741,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', 'length(path)')}"
+742,complex,daycare_childcare_management,False,False,False,"where_conditions differ: missing=set() extra={('name', '<>', 'director'), ('name', '<>', 'aide')}"
+743,complex,daycare_childcare_management,False,False,False,optional_match differs: gold=False pred=True
+744,medium,daycare_childcare_management,False,False,False,"aggregations differ: gold=[] pred=['count']; return columns missing from prediction: {('prop', 'age_group')}"
+745,complex,daycare_childcare_management,False,False,False,"optional_match differs: gold=False pred=True; where_conditions differ: missing={('schedule_type', '<>', 'full-time')} extra={('schedule_type', '=', 'full-time'), ('enrollment_status', '<>', 'waitlisted'), ('enrollment_status', '<>', 'withdrawn'), ('enrollment_status', '<>', 'enrolled')}; return columns missing from prediction: {('prop', 'address')}"
+746,medium,daycare_childcare_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('expr', ""'staffnevercheckedin'""), ('expr', ""'childwithallergy'"")}"
+747,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*'), ('expr', 'staff_countwherestaff_count>=5returncenter.name')}"
+748,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', 'length(path)')}"
+749,complex,daycare_childcare_management,False,True,True,
+750,complex,daycare_childcare_management,False,False,False,aggregations differ: gold=['collect'] pred=['count']
+751,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Center', 'Child', 'Classroom', 'Staff'] pred=['Center', 'Child', 'Classroom', 'Staff']; rel_types differ: gold=['CHECKED_IN', 'ENROLLED_IN', 'HAS_ATTENDANCE', 'LOCATED_AT'] pred=['CHECKED_IN', 'ENROLLED_IN', 'LOCATED_AT']; hop_count differs: gold=4 pred=3"
+752,complex,daycare_childcare_management,False,True,True,
+753,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', 'length(path)')}"
+754,complex,daycare_childcare_management,False,True,True,
+755,medium,daycare_childcare_management,False,True,True,
+756,medium,daycare_childcare_management,False,False,False,optional_match differs: gold=False pred=True
+757,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Child', 'Classroom'] pred=['Child', 'Classroom']; rel_types differ: gold=['ENROLLED_IN', 'LOCATED_AT'] pred=['ENROLLED_IN']; hop_count differs: gold=2 pred=1; optional_match differs: gold=True pred=False; where_conditions differ: missing=set() extra={('enrollment_status', '=', 'enrolled')}; return columns missing from prediction: {('prop', 'name'), ('prop', 'capacity')}"
+758,complex,daycare_childcare_management,False,True,True,
+759,complex,daycare_childcare_management,False,True,True,
+760,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number'), ('bare', 'node')}"
+761,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Child', 'Classroom'] pred=['Child', 'Classroom']; rel_types differ: gold=['ENROLLED_IN', 'LOCATED_AT'] pred=['ENROLLED_IN']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+762,medium,daycare_childcare_management,False,False,False,"aggregations differ: gold=[] pred=['count']; return columns missing from prediction: {('prop', 'role')}"
+763,complex,daycare_childcare_management,False,False,False,"aggregations differ: gold=['collect'] pred=[]; where_conditions differ: missing=set() extra={('relationship', '<>', 'mother'), ('relationship', '<>', 'father')}; return columns missing from prediction: {('bare', 'node')}"
+764,complex,daycare_childcare_management,False,True,True,
+765,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Child', 'Classroom', 'EnrollmentRecord', 'Guardian'] pred=['Center', 'Child', 'Classroom', 'Guardian']; rel_types differ: gold=['ENROLLED_IN', 'GUARDIAN_OF', 'HAS_ENROLLMENT', 'LOCATED_AT'] pred=['ENROLLED_IN', 'GUARDIAN_OF', 'LOCATED_AT']; hop_count differs: gold=4 pred=3; where_conditions differ: missing=set() extra={('enrollment_status', '=', 'enrolled')}"
+766,complex,daycare_childcare_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; where_conditions differ: missing={('enrollment_status', '=', 'enrolled')} extra=set(); return columns missing from prediction: {('prop', 'room_number'), ('bare', 'node')}"
+767,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number'), ('bare', 'node')}"
+768,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Classroom', 'Staff'] pred=['AttendanceLog', 'Child', 'Classroom']; rel_types differ: gold=['CHECKED_IN', 'ENROLLED_IN', 'HAS_ATTENDANCE'] pred=['CHECKED_IN', 'ENROLLED_IN']; aggregations differ: gold=['count'] pred=['collect', 'count']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('bare', 'node')}"
+769,medium,daycare_childcare_management,False,True,True,
+770,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Child', 'Classroom'] pred=['Child', 'Classroom']; rel_types differ: gold=['LOCATED_AT'] pred=[]; hop_count differs: gold=2 pred=1"
+771,medium,daycare_childcare_management,False,True,True,
+772,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Classroom', 'Staff'] pred=['Center', 'Staff']; rel_types differ: gold=['LOCATED_AT', 'TEACHES_IN'] pred=['EMPLOYED_AT']; hop_count differs: gold=2 pred=1"
+773,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Classroom', 'Staff'] pred=['Classroom', 'Staff']; rel_types differ: gold=['LOCATED_AT'] pred=[]; hop_count differs: gold=2 pred=1"
+774,medium,daycare_childcare_management,False,True,True,
+775,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'valid_from')}"
+776,medium,daycare_childcare_management,False,True,True,
+777,medium,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Child', 'Classroom', 'Guardian'] pred=['Child', 'Classroom', 'Guardian']; rel_types differ: gold=['LOCATED_AT'] pred=[]; hop_count differs: gold=3 pred=2"
+778,medium,daycare_childcare_management,False,True,True,
+779,medium,daycare_childcare_management,False,False,False,"rel_types differ: gold=['LOCATED_AT'] pred=['TEACHES_IN']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'room_number'), ('prop', 'valid_from')}"
+780,medium,daycare_childcare_management,False,True,True,
+781,medium,daycare_childcare_management,False,False,False,"rel_types differ: gold=[] pred=['HAS_ATTENDANCE']; return columns missing from prediction: {('prop', 'valid_from')}"
+782,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['Center', 'Child', 'Classroom'] pred=['Child', 'Classroom']; rel_types differ: gold=['LOCATED_AT'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+783,medium,daycare_childcare_management,False,True,True,
+784,medium,daycare_childcare_management,False,True,True,
+785,complex,daycare_childcare_management,False,True,True,
+786,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', ""'ended_guardianship'""), ('expr', ""'ended_employment'"")}"
+787,complex,daycare_childcare_management,False,True,True,
+788,medium,daycare_childcare_management,False,False,False,"aggregations differ: gold=[] pred=['collect']; return columns missing from prediction: {('prop', 'valid_from')}"
+789,complex,daycare_childcare_management,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('agg', 'count:*')}"
+790,medium,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'attendance_date')}"
+791,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', ""whichisexactlywhat'howmanyactiveguardianrelationshipsexist'asksfor--nodedupneededsincewewantrelationship-countnotdistinct-child-count."")}"
+792,medium,daycare_childcare_management,False,True,True,
+793,medium,daycare_childcare_management,False,True,True,
+794,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Staff'] pred=['AttendanceLog', 'Staff']; rel_types differ: gold=['HAS_ATTENDANCE'] pred=[]; hop_count differs: gold=2 pred=1"
+795,complex,daycare_childcare_management,False,False,False,"rel_types differ: gold=['ENROLLED_IN', 'HAS_ENROLLMENT'] pred=['ENROLLED_IN']; return columns missing from prediction: {('prop', 'schedule_type')}"
+796,complex,daycare_childcare_management,False,True,True,
+797,complex,daycare_childcare_management,False,True,True,
+798,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+799,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+800,complex,daycare_childcare_management,False,False,False,"rel_types differ: gold=['GUARDIAN_OF', 'HAS_ENROLLMENT', 'LOCATED_AT'] pred=['ENROLLED_IN', 'GUARDIAN_OF', 'HAS_ENROLLMENT', 'LOCATED_AT']"
+801,complex,daycare_childcare_management,False,True,True,
+802,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+803,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('expr', ""'largeclassroom'""), ('expr', ""'largecenter'"")}"
+804,complex,daycare_childcare_management,False,False,True,"return columns missing from prediction: {('prop', 'room_number')}"
+805,complex,daycare_childcare_management,False,False,False,"labels differ: gold=['AttendanceLog', 'Child', 'Classroom'] pred=['AttendanceLog', 'Child']; rel_types differ: gold=['ENROLLED_IN'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'room_number')}"
+806,complex,daycare_childcare_management,False,False,False,"where_conditions differ: missing={('allergies', '<>', '')} extra=set(); return columns missing from prediction: {('expr', ""'staff-infant-checkin'""), ('expr', ""'guardian-allergy'"")}"
+807,complex,daycare_childcare_management,False,True,True,
+808,complex,daycare_childcare_management,False,True,True,
+809,complex,daycare_childcare_management,False,True,True,
+810,easy,law_firm_case_management,False,True,True,
+811,easy,law_firm_case_management,False,True,True,
+812,easy,law_firm_case_management,False,False,False,rel_types differ: gold=['CONDUCTED_DEPOSITION'] pred=['INCLUDES_DEPOSITION']
+813,easy,law_firm_case_management,False,True,True,
+814,easy,law_firm_case_management,False,True,True,
+815,easy,law_firm_case_management,False,True,True,
+816,easy,law_firm_case_management,False,True,True,
+817,easy,law_firm_case_management,True,True,True,
+818,easy,law_firm_case_management,True,True,True,
+819,easy,law_firm_case_management,False,True,True,
+820,easy,law_firm_case_management,True,True,True,
+821,easy,law_firm_case_management,True,True,True,
+822,easy,law_firm_case_management,False,True,True,
+823,easy,law_firm_case_management,False,True,True,
+824,easy,law_firm_case_management,False,True,True,
+825,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_type')}"
+826,easy,law_firm_case_management,True,True,True,
+827,easy,law_firm_case_management,False,True,True,
+828,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'issued_date')}"
+829,easy,law_firm_case_management,True,True,True,
+830,easy,law_firm_case_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'name')}"
+831,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'client_type')}"
+832,easy,law_firm_case_management,False,True,True,
+833,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+834,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'seniority')}"
+835,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+836,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('agg', 'sum:claim_amount')}"
+837,easy,law_firm_case_management,False,False,True,"return columns missing from prediction: {('agg', 'avg:claim_amount')}"
+838,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'claim_amount')}"
+839,easy,law_firm_case_management,False,True,True,
+840,medium,law_firm_case_management,False,True,True,
+841,medium,law_firm_case_management,False,True,True,
+842,complex,law_firm_case_management,False,True,True,
+843,medium,law_firm_case_management,False,True,True,
+844,easy,law_firm_case_management,False,True,True,
+845,medium,law_firm_case_management,False,True,True,
+846,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'ruling')}"
+847,medium,law_firm_case_management,True,True,True,
+848,medium,law_firm_case_management,True,True,True,
+849,medium,law_firm_case_management,False,True,True,
+850,medium,law_firm_case_management,False,True,True,
+851,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*'), ('agg', 'min:valid_from')}"
+852,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('expr', ""'lead_counsel'""), ('expr', ""'deposition'"")}"
+853,medium,law_firm_case_management,True,True,True,
+854,medium,law_firm_case_management,True,True,True,
+855,medium,law_firm_case_management,False,False,False,"rel_types differ: gold=['INCLUDES_MOTION', 'PARTY_TO', 'SCHEDULED_HEARING'] pred=['PARTY_TO', 'SCHEDULED_HEARING']"
+856,complex,law_firm_case_management,False,True,True,
+857,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_number')}"
+858,complex,law_firm_case_management,False,True,True,
+859,medium,law_firm_case_management,False,True,True,
+860,complex,law_firm_case_management,False,True,True,
+861,complex,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Court', 'Judgment'] pred=['Case', 'Court']; rel_types differ: gold=['FILED_IN', 'RESULTED_IN'] pred=['FILED_IN']; hop_count differs: gold=2 pred=1; optional_match differs: gold=True pred=False; return columns missing from prediction: {('bare', 'node')}"
+862,complex,law_firm_case_management,False,False,False,"aggregations differ: gold=['count', 'min', 'sum'] pred=['collect', 'count', 'min']; return columns missing from prediction: {('agg', 'sum:*'), ('agg', 'min:*')}"
+863,medium,law_firm_case_management,False,True,True,
+864,complex,law_firm_case_management,False,True,True,
+865,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'amount_awarded')}"
+866,medium,law_firm_case_management,False,True,True,
+867,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('expr', ""'filedfederal'""), ('expr', ""'plaintiffverdict'"")}"
+868,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'filed_date')}"
+869,medium,law_firm_case_management,False,True,True,
+870,complex,law_firm_case_management,False,True,True,
+871,medium,law_firm_case_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+872,medium,law_firm_case_management,False,True,True,
+873,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'motion_type')}"
+874,complex,law_firm_case_management,False,True,True,
+875,medium,law_firm_case_management,False,True,True,
+876,medium,law_firm_case_management,False,True,True,
+877,complex,law_firm_case_management,False,True,True,
+878,medium,law_firm_case_management,False,True,True,
+879,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_number')}"
+880,complex,law_firm_case_management,True,True,True,
+881,medium,law_firm_case_management,False,True,True,
+882,complex,law_firm_case_management,False,True,True,
+883,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+884,medium,law_firm_case_management,False,True,True,
+885,medium,law_firm_case_management,False,True,True,
+886,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'location')}"
+887,medium,law_firm_case_management,False,True,True,
+888,medium,law_firm_case_management,True,True,True,
+889,medium,law_firm_case_management,False,True,True,
+890,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'location')}"
+891,medium,law_firm_case_management,True,True,True,
+892,medium,law_firm_case_management,False,True,True,
+893,medium,law_firm_case_management,False,True,True,
+894,medium,law_firm_case_management,False,True,True,
+895,medium,law_firm_case_management,False,True,True,
+896,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Court'] pred=['Case', 'Court']; rel_types differ: gold=['FILED_IN', 'PARTY_TO'] pred=['FILED_IN']; hop_count differs: gold=2 pred=1"
+897,medium,law_firm_case_management,False,True,True,
+898,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Court', 'Judgment'] pred=['Case', 'Court', 'Judgment']; rel_types differ: gold=['FILED_IN', 'PARTY_TO', 'RESULTED_IN'] pred=['FILED_IN', 'RESULTED_IN']; hop_count differs: gold=3 pred=2"
+899,medium,law_firm_case_management,False,True,True,
+900,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Court', 'Hearing'] pred=['Case', 'Court', 'Hearing']; rel_types differ: gold=['FILED_IN', 'PARTY_TO', 'SCHEDULED_HEARING'] pred=['FILED_IN', 'SCHEDULED_HEARING']; hop_count differs: gold=3 pred=2"
+901,medium,law_firm_case_management,False,True,True,
+902,medium,law_firm_case_management,True,True,True,
+903,medium,law_firm_case_management,False,True,True,
+904,medium,law_firm_case_management,False,True,True,
+905,medium,law_firm_case_management,False,False,False,"where_conditions differ: missing={('represented_by_firm', '=', 'whitfield legal group')} extra={('name', '=', 'whitfield legal group')}"
+906,medium,law_firm_case_management,True,True,True,
+907,medium,law_firm_case_management,False,True,True,
+908,medium,law_firm_case_management,False,True,True,
+909,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'outcome')}"
+910,medium,law_firm_case_management,False,True,True,
+911,medium,law_firm_case_management,False,True,True,
+912,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'outcome')}"
+913,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+914,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'deponent_role')}"
+915,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'location')}"
+916,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'outcome')}"
+917,medium,law_firm_case_management,False,False,False,"where_conditions differ: missing={('location', '=', 'cook county')} extra={('location', 'contains', 'cook county')}; return columns missing from prediction: {('prop', 'filing_date')}"
+918,medium,law_firm_case_management,False,True,True,
+919,medium,law_firm_case_management,False,True,True,
+920,medium,law_firm_case_management,False,True,True,
+921,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Hearing'] pred=['Case', 'Hearing']; rel_types differ: gold=['PARTY_TO', 'SCHEDULED_HEARING'] pred=['SCHEDULED_HEARING']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+922,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Attorney', 'Case', 'Deposition'] pred=['Attorney', 'Deposition']; rel_types differ: gold=['CONDUCTED_DEPOSITION', 'INCLUDES_DEPOSITION'] pred=['CONDUCTED_DEPOSITION']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'case_number')}"
+923,medium,law_firm_case_management,False,True,True,
+924,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'amount_awarded')}"
+925,medium,law_firm_case_management,False,False,False,"where_conditions differ: missing={('location', '=', 'new york')} extra={('location', 'contains', 'new york')}"
+926,medium,law_firm_case_management,False,True,True,
+927,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'outcome')}"
+928,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'deponent_role')}"
+929,medium,law_firm_case_management,False,True,True,
+930,medium,law_firm_case_management,False,False,False,"where_conditions differ: missing={('represented_by_firm', '=', 'smith & associates')} extra={('name', '=', 'smith & associates')}"
+931,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Court'] pred=['Case', 'Court']; rel_types differ: gold=['FILED_IN', 'PARTY_TO'] pred=['FILED_IN']; hop_count differs: gold=2 pred=1"
+932,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'outcome')}"
+933,medium,law_firm_case_management,False,True,True,
+934,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'deponent_role')}"
+935,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Motion'] pred=['Case', 'Motion']; rel_types differ: gold=['INCLUDES_MOTION', 'PARTY_TO'] pred=['INCLUDES_MOTION']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+936,medium,law_firm_case_management,False,True,True,
+937,medium,law_firm_case_management,False,False,False,optional_match differs: gold=False pred=True
+938,medium,law_firm_case_management,False,True,True,
+939,medium,law_firm_case_management,False,True,True,
+940,medium,law_firm_case_management,False,True,True,
+941,medium,law_firm_case_management,False,True,True,
+942,medium,law_firm_case_management,False,True,True,
+943,medium,law_firm_case_management,False,True,True,
+944,medium,law_firm_case_management,False,True,True,
+945,medium,law_firm_case_management,False,True,True,
+946,medium,law_firm_case_management,False,True,True,
+947,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+948,medium,law_firm_case_management,False,True,True,
+949,medium,law_firm_case_management,False,True,True,
+950,medium,law_firm_case_management,False,True,True,
+951,medium,law_firm_case_management,False,True,True,
+952,medium,law_firm_case_management,False,True,True,
+953,medium,law_firm_case_management,False,True,True,
+954,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Attorney', 'Case', 'Court', 'Judgment'] pred=['Attorney', 'Case', 'Court']; rel_types differ: gold=['FILED_IN', 'LEAD_COUNSEL_ON', 'RESULTED_IN'] pred=['FILED_IN', 'LEAD_COUNSEL_ON']; hop_count differs: gold=3 pred=2; where_conditions differ: missing=set() extra={('case_type', 'in', ""['contract dispute', 'personal injury', 'employment', 'ip dispute']""), ('status', '=', 'resolved')}"
+955,complex,law_firm_case_management,False,True,True,
+956,complex,law_firm_case_management,False,True,True,
+957,complex,law_firm_case_management,False,False,False,optional_match differs: gold=False pred=True
+958,complex,law_firm_case_management,False,True,True,
+959,complex,law_firm_case_management,False,False,False,"labels differ: gold=['Attorney', 'Case', 'Client', 'Court', 'Deposition'] pred=['Attorney', 'Case', 'Client', 'Deposition']; rel_types differ: gold=['CONDUCTED_DEPOSITION', 'FILED_IN', 'INCLUDES_DEPOSITION', 'PARTY_TO'] pred=['CONDUCTED_DEPOSITION', 'INCLUDES_DEPOSITION', 'PARTY_TO']; hop_count differs: gold=4 pred=3"
+960,complex,law_firm_case_management,True,True,True,
+961,complex,law_firm_case_management,False,True,True,
+962,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+963,complex,law_firm_case_management,False,True,True,
+964,complex,law_firm_case_management,False,True,True,
+965,complex,law_firm_case_management,True,True,True,
+966,complex,law_firm_case_management,False,True,True,
+967,complex,law_firm_case_management,False,True,True,
+968,complex,law_firm_case_management,False,True,True,
+969,complex,law_firm_case_management,False,True,True,
+970,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'issued_date')}"
+971,complex,law_firm_case_management,False,True,True,
+972,medium,law_firm_case_management,False,True,True,
+973,complex,law_firm_case_management,False,True,True,
+974,medium,law_firm_case_management,False,True,True,
+975,complex,law_firm_case_management,False,True,True,
+976,medium,law_firm_case_management,False,True,True,
+977,complex,law_firm_case_management,False,False,False,"aggregations differ: gold=['collect', 'count'] pred=['count']"
+978,complex,law_firm_case_management,False,False,False,"where_conditions differ: missing={('location', '=', 'new york')} extra={('location', 'contains', 'new york')}"
+979,complex,law_firm_case_management,False,True,True,
+980,complex,law_firm_case_management,False,False,False,"labels differ: gold=['Attorney', 'Case', 'Court', 'Deposition'] pred=['Attorney', 'Case', 'Deposition']; rel_types differ: gold=['CONDUCTED_DEPOSITION', 'FILED_IN', 'INCLUDES_DEPOSITION', 'LEAD_COUNSEL_ON'] pred=['INCLUDES_DEPOSITION', 'LEAD_COUNSEL_ON']; hop_count differs: gold=4 pred=2; return columns missing from prediction: {('prop', 'location')}"
+981,complex,law_firm_case_management,False,True,True,
+982,complex,law_firm_case_management,True,True,True,
+983,complex,law_firm_case_management,False,True,True,
+984,complex,law_firm_case_management,False,True,True,
+985,complex,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Court', 'Judgment'] pred=['Case', 'Judgment']; rel_types differ: gold=['FILED_IN', 'RESULTED_IN'] pred=['RESULTED_IN']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'location')}"
+986,complex,law_firm_case_management,False,True,True,
+987,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+988,complex,law_firm_case_management,False,False,False,"where_conditions differ: missing=set() extra={('represented_by_firm', '<>', 'firm a')}"
+989,complex,law_firm_case_management,False,True,True,
+990,complex,law_firm_case_management,False,True,True,
+991,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'location')}"
+992,complex,law_firm_case_management,False,False,False,"union differs: gold=True pred=False; return columns missing from prediction: {('expr', ""'opposingparty'""), ('expr', ""'client'"")}"
+993,complex,law_firm_case_management,False,True,True,
+994,complex,law_firm_case_management,False,True,True,
+995,complex,law_firm_case_management,False,False,False,"rel_types differ: gold=['CONDUCTED_DEPOSITION', 'INCLUDES_DEPOSITION', 'RESULTED_IN'] pred=['CONDUCTED_DEPOSITION', 'INCLUDES_DEPOSITION']; hop_count differs: gold=3 pred=2"
+996,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+997,complex,law_firm_case_management,False,True,True,
+998,complex,law_firm_case_management,False,True,True,
+999,medium,law_firm_case_management,False,True,True,
+1000,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'location')}"
+1001,medium,law_firm_case_management,False,True,True,
+1002,medium,law_firm_case_management,False,True,True,
+1003,medium,law_firm_case_management,False,True,True,
+1004,medium,law_firm_case_management,False,True,True,
+1005,medium,law_firm_case_management,False,True,True,
+1006,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_number')}"
+1007,medium,law_firm_case_management,False,True,True,
+1008,medium,law_firm_case_management,False,True,True,
+1009,medium,law_firm_case_management,False,False,False,"labels differ: gold=['Attorney', 'Case', 'Deposition'] pred=['Attorney', 'Deposition']; rel_types differ: gold=['CONDUCTED_DEPOSITION', 'INCLUDES_DEPOSITION'] pred=['CONDUCTED_DEPOSITION']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'case_number')}"
+1010,medium,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_number')}"
+1011,complex,law_firm_case_management,False,True,True,
+1012,complex,law_firm_case_management,False,False,False,optional_match differs: gold=True pred=False
+1013,complex,law_firm_case_management,False,True,True,
+1014,complex,law_firm_case_management,False,False,False,"labels differ: gold=['Case', 'Client', 'Hearing', 'Judgment'] pred=['Case', 'Client', 'Court', 'Hearing', 'Judgment']; rel_types differ: gold=['PARTY_TO', 'RESULTED_IN', 'SCHEDULED_HEARING'] pred=['FILED_IN', 'PARTY_TO', 'RESULTED_IN', 'SCHEDULED_HEARING']; hop_count differs: gold=3 pred=4; return columns missing from prediction: {('prop', 'case_number')}"
+1015,complex,law_firm_case_management,False,False,False,"hop_count differs: gold=2 pred=1; union differs: gold=True pred=False; where_conditions differ: missing=set() extra={('motion_type', '=', 'summary judgment')}"
+1016,complex,law_firm_case_management,False,True,True,
+1017,complex,law_firm_case_management,False,True,True,
+1018,complex,law_firm_case_management,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('prop', 'location')}"
+1019,complex,law_firm_case_management,False,False,True,"return columns missing from prediction: {('prop', 'case_number')}"
+1020,complex,law_firm_case_management,False,True,True,
+1021,complex,law_firm_case_management,False,True,True,
+1022,complex,law_firm_case_management,False,False,False,"aggregations differ: gold=['avg', 'count', 'max', 'min'] pred=['avg', 'max', 'min']; optional_match differs: gold=True pred=False; return columns missing from prediction: {('agg', 'count:*')}"
+1023,complex,law_firm_case_management,False,False,False,"where_conditions differ: missing={('outcome', '=', 'granted')} extra=set(); return columns missing from prediction: {('prop', 'case_number')}"
+1024,complex,law_firm_case_management,False,False,False,optional_match differs: gold=False pred=True
+1025,easy,nonprofit_grant_management,False,True,True,
+1026,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'finding_date'), ('prop', 'severity'), ('prop', 'firm_name')}"
+1027,easy,nonprofit_grant_management,False,True,True,
+1028,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'firm_name')}"
+1029,medium,nonprofit_grant_management,True,True,True,
+1030,easy,nonprofit_grant_management,False,True,True,
+1031,easy,nonprofit_grant_management,True,True,True,
+1032,easy,nonprofit_grant_management,True,True,True,
+1033,easy,nonprofit_grant_management,False,True,True,
+1034,easy,nonprofit_grant_management,True,True,True,
+1035,easy,nonprofit_grant_management,False,True,True,
+1036,easy,nonprofit_grant_management,False,True,True,
+1037,easy,nonprofit_grant_management,False,True,True,
+1038,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'award_amount'), ('prop', 'id')}"
+1039,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id'), ('prop', 'grace_period_days')}"
+1040,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'review_status'), ('prop', 'id')}"
+1041,easy,nonprofit_grant_management,True,True,True,
+1042,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1043,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'remediation_status'), ('prop', 'id')}"
+1044,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1045,easy,nonprofit_grant_management,False,False,False,aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True
+1046,easy,nonprofit_grant_management,False,False,False,"where_conditions differ: missing=set() extra={('on_time', '=', 'false')}; return columns missing from prediction: {('prop', 'review_status')}"
+1047,easy,nonprofit_grant_management,False,True,True,
+1048,easy,nonprofit_grant_management,False,True,True,
+1049,easy,nonprofit_grant_management,False,True,True,
+1050,easy,nonprofit_grant_management,False,True,True,
+1051,easy,nonprofit_grant_management,True,True,True,
+1052,easy,nonprofit_grant_management,True,True,True,
+1053,easy,nonprofit_grant_management,False,True,True,
+1054,easy,nonprofit_grant_management,True,True,True,
+1055,medium,nonprofit_grant_management,False,False,False,"where_conditions differ: missing=set() extra={('requirement_type', '=', 'financial reporting')}; return columns missing from prediction: {('prop', 'award_amount')}"
+1056,complex,nonprofit_grant_management,False,True,True,
+1057,easy,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'award_amount')}"
+1058,medium,nonprofit_grant_management,False,True,True,
+1059,easy,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('grace_period_days', '>', '14')} extra=set()"
+1060,easy,nonprofit_grant_management,False,False,False,"labels differ: gold=['Funder', 'Grant'] pred=['ComplianceRequirement', 'Funder', 'Grant']; rel_types differ: gold=['AWARDED'] pred=['AWARDED', 'SUBJECT_TO']; hop_count differs: gold=1 pred=2"
+1061,medium,nonprofit_grant_management,False,True,True,
+1062,medium,nonprofit_grant_management,False,True,True,
+1063,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'remediation_status'), ('prop', 'firm_name')}"
+1064,complex,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['AWARDED', 'MET_BY', 'SUBJECT_TO'] pred=['AWARDED', 'HAS_DEADLINE', 'MET_BY', 'SUBJECT_TO']; where_conditions differ: missing={('on_time', '=', 'true')} extra={('status', '=', 'active')}; return columns missing from prediction: {('bare', 'node')}"
+1065,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Grant', 'Submission'] pred=['ComplianceRequirement', 'Deadline', 'Grant']; rel_types differ: gold=['HAS_DEADLINE', 'MET_BY', 'SUBJECT_TO'] pred=['HAS_DEADLINE', 'SUBJECT_TO']; aggregations differ: gold=['count'] pred=['count', 'sum']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'on_time')}"
+1066,complex,nonprofit_grant_management,False,False,False,"where_conditions differ: missing=set() extra={('remediation_status', '=', 'open')}"
+1067,complex,nonprofit_grant_management,False,True,True,
+1068,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Funder', 'Grant', 'RemediationAction'] pred=['AuditFinding', 'Auditor', 'ComplianceRequirement', 'Deadline', 'Funder', 'Grant', 'RemediationAction', 'Submission']; rel_types differ: gold=['ADDRESSED_BY', 'AWARDED', 'RELATES_TO', 'VERIFIED_BY'] pred=['ADDRESSED_BY', 'AWARDED', 'HAS_DEADLINE', 'MET_BY', 'SUBJECT_TO', 'VERIFIED_BY']; hop_count differs: gold=4 pred=6"
+1069,complex,nonprofit_grant_management,True,True,True,
+1070,complex,nonprofit_grant_management,False,False,False,"aggregations differ: gold=['collect'] pred=[]; return columns missing from prediction: {('prop', 'firm_name'), ('agg', 'collect:remediation_status')}"
+1071,complex,nonprofit_grant_management,False,True,True,
+1072,complex,nonprofit_grant_management,False,True,True,
+1073,medium,nonprofit_grant_management,False,True,True,
+1074,medium,nonprofit_grant_management,False,True,True,
+1075,complex,nonprofit_grant_management,False,False,False,aggregations differ: gold=[] pred=['count']
+1076,medium,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('severity', '=', 'critical'), ('severity', '=', 'high')} extra={('severity', 'in', ""['critical', 'high']"")}; return columns missing from prediction: {('prop', 'firm_name')}"
+1077,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'firm_name'), ('prop', 'due_date')}"
+1078,complex,nonprofit_grant_management,False,True,True,
+1079,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Funder', 'Grant'] pred=['AuditFinding', 'Auditor', 'ComplianceRequirement', 'Deadline', 'Funder', 'Grant', 'Submission']; rel_types differ: gold=['AWARDED', 'RELATES_TO'] pred=['AWARDED', 'CONDUCTED', 'HAS_DEADLINE', 'MET_BY', 'RELATES_TO', 'SUBJECT_TO']; hop_count differs: gold=2 pred=6; return columns missing from prediction: {('prop', 'finding_date')}"
+1080,medium,nonprofit_grant_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+1081,complex,nonprofit_grant_management,False,False,False,aggregations differ: gold=[] pred=['count']
+1082,complex,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('severity', '=', 'critical'), ('severity', '=', 'high')} extra={('severity', 'in', ""['critical', 'high']"")}"
+1083,complex,nonprofit_grant_management,False,True,True,
+1084,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Funder', 'Grant', 'RemediationAction'] pred=['Auditor', 'ComplianceRequirement', 'Deadline', 'Funder', 'Grant', 'RemediationAction', 'Submission']; rel_types differ: gold=['ADDRESSED_BY', 'AWARDED', 'RELATES_TO', 'VERIFIED_BY'] pred=['AWARDED', 'HAS_DEADLINE', 'MET_BY', 'SUBJECT_TO', 'VERIFIED_BY']; hop_count differs: gold=4 pred=5; return columns missing from prediction: {('prop', 'firm_name')}"
+1085,complex,nonprofit_grant_management,False,True,True,
+1086,complex,nonprofit_grant_management,False,False,False,optional_match differs: gold=True pred=False
+1087,complex,nonprofit_grant_management,False,False,False,"hop_count differs: gold=1 pred=2; optional_match differs: gold=False pred=True; where_conditions differ: missing=set() extra={('risk_level', '=', 'critical')}; return columns missing from prediction: {('prop', 'funder_type'), ('expr', ""count(casewheng.risk_level='critical'then1end)""), ('agg', 'sum:award_amount')}"
+1088,complex,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('remediation_status', '=', 'overdue')} extra=set()"
+1089,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Grant', 'Submission'] pred=['ComplianceRequirement', 'Deadline', 'Submission']; rel_types differ: gold=['HAS_DEADLINE', 'MET_BY', 'SUBJECT_TO'] pred=['HAS_DEADLINE', 'MET_BY']; aggregations differ: gold=[] pred=['count']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'name')}"
+1090,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('expr', ""duration.between(ra.due_date,date('2026-08-12')).days"")}"
+1091,complex,nonprofit_grant_management,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'firm_name')}"
+1092,medium,nonprofit_grant_management,False,False,False,"aggregations differ: gold=['avg', 'count', 'sum'] pred=['avg', 'sum']; return columns missing from prediction: {('agg', 'count:*')}"
+1093,medium,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('funder_type', '<>', 'federal agency')} extra={('funder_type', '=', 'federal agency')}; return columns missing from prediction: {('prop', 'id'), ('prop', 'requirement_type')}"
+1094,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Grant'] pred=['AuditFinding', 'Grant']; rel_types differ: gold=['CONDUCTED', 'RELATES_TO'] pred=['RELATES_TO']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id')}"
+1095,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Grant'] pred=['ComplianceRequirement', 'Deadline']; rel_types differ: gold=['HAS_DEADLINE', 'SUBJECT_TO'] pred=['HAS_DEADLINE']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id')}"
+1096,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Grant'] pred=['ComplianceRequirement', 'Deadline']; rel_types differ: gold=['HAS_DEADLINE', 'SUBJECT_TO'] pred=['HAS_DEADLINE']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id')}"
+1097,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Submission'] pred=['Deadline', 'Submission']; rel_types differ: gold=['HAS_DEADLINE', 'MET_BY'] pred=['MET_BY']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'review_status'), ('prop', 'id')}"
+1098,medium,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('frequency', '<>', 'one-time')} extra={('requirement_type', '<>', 'one-time')}"
+1099,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1100,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'firm_name')}"
+1101,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Grant'] pred=['AuditFinding', 'Grant', 'RemediationAction']; rel_types differ: gold=['CONDUCTED', 'RELATES_TO'] pred=['ADDRESSED_BY', 'RELATES_TO']; return columns missing from prediction: {('prop', 'id'), ('prop', 'firm_name')}"
+1102,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'ComplianceRequirement', 'Grant'] pred=['AuditFinding', 'ComplianceRequirement', 'Deadline', 'Grant', 'Submission']; rel_types differ: gold=['RELATES_TO', 'SUBJECT_TO'] pred=['HAS_DEADLINE', 'MET_BY', 'RELATES_TO', 'SUBJECT_TO']; hop_count differs: gold=2 pred=4; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'id'), ('agg', 'count:*')}"
+1103,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id'), ('prop', 'severity')}"
+1104,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'RemediationAction'] pred=['Auditor', 'RemediationAction']; rel_types differ: gold=['ADDRESSED_BY', 'VERIFIED_BY'] pred=['VERIFIED_BY']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id'), ('prop', 'firm_name')}"
+1105,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Funder', 'Grant'] pred=['AuditFinding', 'Auditor', 'Grant']; rel_types differ: gold=['AWARDED', 'CONDUCTED', 'RELATES_TO'] pred=['CONDUCTED', 'RELATES_TO']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'firm_name')}"
+1106,medium,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['ADDRESSED_BY', 'CONDUCTED', 'VERIFIED_BY'] pred=['ADDRESSED_BY', 'VERIFIED_BY']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'id'), ('prop', 'firm_name')}"
+1107,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1108,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Submission'] pred=['Deadline', 'Submission']; rel_types differ: gold=['HAS_DEADLINE', 'MET_BY'] pred=['MET_BY']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id'), ('prop', 'due_date')}"
+1109,medium,nonprofit_grant_management,False,True,True,
+1110,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Funder', 'Grant'] pred=['ComplianceRequirement', 'Grant']; rel_types differ: gold=['AWARDED', 'SUBJECT_TO'] pred=['SUBJECT_TO']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id')}"
+1111,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Grant'] pred=['ComplianceRequirement', 'Deadline']; rel_types differ: gold=['HAS_DEADLINE', 'SUBJECT_TO'] pred=['HAS_DEADLINE']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id')}"
+1112,medium,nonprofit_grant_management,False,True,True,
+1113,medium,nonprofit_grant_management,False,True,True,
+1114,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Grant'] pred=['AuditFinding', 'Grant']; rel_types differ: gold=['CONDUCTED', 'RELATES_TO'] pred=['RELATES_TO']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'id'), ('prop', 'firm_name')}"
+1115,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'RemediationAction'] pred=['RemediationAction']; rel_types differ: gold=['ADDRESSED_BY', 'CONDUCTED'] pred=[]; hop_count differs: gold=2 pred=0; return columns missing from prediction: {('prop', 'firm_name'), ('prop', 'description')}"
+1116,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Funder', 'Grant'] pred=['ComplianceRequirement', 'Grant']; rel_types differ: gold=['AWARDED', 'SUBJECT_TO'] pred=['SUBJECT_TO']; hop_count differs: gold=2 pred=1; where_conditions differ: missing={('award_amount', 'not <', '50000')} extra={('award_amount', '>=', '50000')}; return columns missing from prediction: {('prop', 'id')}"
+1117,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id'), ('prop', 'firm_name')}"
+1118,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1119,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1120,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'firm_name'), ('prop', 'description')}"
+1121,medium,nonprofit_grant_management,False,True,True,
+1122,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Grant'] pred=['ComplianceRequirement', 'Deadline']; rel_types differ: gold=['HAS_DEADLINE', 'SUBJECT_TO'] pred=['HAS_DEADLINE']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+1123,medium,nonprofit_grant_management,False,True,True,
+1124,medium,nonprofit_grant_management,False,True,True,
+1125,medium,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'RemediationAction'] pred=['Auditor', 'RemediationAction']; rel_types differ: gold=['ADDRESSED_BY', 'VERIFIED_BY'] pred=['VERIFIED_BY']; hop_count differs: gold=2 pred=1"
+1126,medium,nonprofit_grant_management,False,True,True,
+1127,medium,nonprofit_grant_management,True,True,True,
+1128,medium,nonprofit_grant_management,False,True,True,
+1129,medium,nonprofit_grant_management,False,True,True,
+1130,medium,nonprofit_grant_management,False,True,True,
+1131,medium,nonprofit_grant_management,False,True,True,
+1132,medium,nonprofit_grant_management,False,True,True,
+1133,medium,nonprofit_grant_management,True,True,True,
+1134,medium,nonprofit_grant_management,False,True,True,
+1135,medium,nonprofit_grant_management,False,True,True,
+1136,medium,nonprofit_grant_management,False,True,True,
+1137,medium,nonprofit_grant_management,False,True,True,
+1138,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'requirement_type')}"
+1139,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'review_status')}"
+1140,medium,nonprofit_grant_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+1141,complex,nonprofit_grant_management,False,False,False,"where_conditions differ: missing=set() extra={('is_extended', '=', 'true')}; return columns missing from prediction: {('expr', ""'unaddressedcriticalfinding'""), ('expr', ""'extendeddeadline'"")}"
+1142,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'Auditor', 'Grant', 'RemediationAction'] pred=['AuditFinding', 'Auditor', 'RemediationAction']; rel_types differ: gold=['ADDRESSED_BY', 'CONDUCTED', 'RELATES_TO', 'VERIFIED_BY'] pred=['ADDRESSED_BY', 'CONDUCTED', 'VERIFIED_BY']; hop_count differs: gold=4 pred=3; return columns missing from prediction: {('prop', 'description')}"
+1143,medium,nonprofit_grant_management,False,True,True,
+1144,medium,nonprofit_grant_management,False,True,True,
+1145,complex,nonprofit_grant_management,False,True,True,
+1146,complex,nonprofit_grant_management,False,False,False,"aggregations differ: gold=[] pred=['collect', 'count']; hop_count differs: gold=3 pred=4; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'frequency'), ('prop', 'requirement_type')}"
+1147,medium,nonprofit_grant_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+1148,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'requirement_type'), ('prop', 'due_date')}"
+1149,medium,nonprofit_grant_management,False,True,True,
+1150,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'on_time')}"
+1151,complex,nonprofit_grant_management,False,False,False,"where_conditions differ: missing=set() extra={('requirement_type', '=', 'audit')}; return columns missing from prediction: {('expr', ""'lowstrictnessauditrequirement'""), ('expr', ""'criticalrisknon-foundation'"")}"
+1152,complex,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['ADDRESSED_BY', 'CONDUCTED', 'RELATES_TO', 'VERIFIED_BY'] pred=['ADDRESSED_BY', 'CONDUCTED', 'RELATES_TO']; hop_count differs: gold=4 pred=3; return columns missing from prediction: {('prop', 'remediation_status')}"
+1153,medium,nonprofit_grant_management,False,True,True,
+1154,complex,nonprofit_grant_management,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('prop', 'remediation_status')}"
+1155,complex,nonprofit_grant_management,False,True,True,
+1156,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1157,medium,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['ADDRESSED_BY', 'AWARDED', 'CONDUCTED', 'RELATES_TO'] pred=['ADDRESSED_BY', 'AWARDED', 'RELATES_TO', 'VERIFIED_BY']; return columns missing from prediction: {('prop', 'due_date')}"
+1158,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1159,medium,nonprofit_grant_management,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'id')}"
+1160,medium,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('compliance_strictness', '=', 'high')} extra=set()"
+1161,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['AuditFinding', 'ComplianceRequirement', 'Grant'] pred=['AuditFinding', 'ComplianceRequirement', 'Deadline', 'Grant', 'Submission']; rel_types differ: gold=['RELATES_TO', 'SUBJECT_TO'] pred=['HAS_DEADLINE', 'MET_BY', 'RELATES_TO', 'SUBJECT_TO']; hop_count differs: gold=2 pred=4; return columns missing from prediction: {('prop', 'id')}"
+1162,medium,nonprofit_grant_management,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('agg', 'count:*'), ('prop', 'requirement_type')}"
+1163,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1164,medium,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['CONDUCTED', 'VERIFIED_BY'] pred=['ADDRESSED_BY', 'CONDUCTED', 'VERIFIED_BY']; hop_count differs: gold=2 pred=3; optional_match differs: gold=False pred=True; where_conditions differ: missing={('remediation_status', '=', 'completed')} extra=set(); return columns missing from prediction: {('prop', 'id'), ('prop', 'firm_name')}"
+1165,medium,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1166,complex,nonprofit_grant_management,False,False,False,aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True
+1167,complex,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['AWARDED', 'MET_BY', 'SUBJECT_TO'] pred=['AWARDED']; return columns missing from prediction: {('prop', 'review_status'), ('prop', 'id')}"
+1168,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'review_status')}"
+1169,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('expr', 'labels(x)'), ('prop', 'id')}"
+1170,complex,nonprofit_grant_management,False,False,False,"where_conditions differ: missing={('severity', 'in', ""['high', 'critical']"")} extra={('severity', 'in', ""['critical', 'high']"")}; return columns missing from prediction: {('prop', 'remediation_status'), ('prop', 'id'), ('prop', 'severity')}"
+1171,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1172,complex,nonprofit_grant_management,False,True,True,
+1173,complex,nonprofit_grant_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1174,complex,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['AWARDED', 'MET_BY', 'SUBJECT_TO'] pred=['AWARDED', 'HAS_DEADLINE', 'MET_BY']; return columns missing from prediction: {('prop', 'review_status'), ('prop', 'id'), ('prop', 'requirement_type')}"
+1175,complex,nonprofit_grant_management,False,False,False,"labels differ: gold=['ComplianceRequirement', 'Deadline', 'Submission'] pred=['Deadline', 'Submission']; rel_types differ: gold=['HAS_DEADLINE'] pred=[]; hop_count differs: gold=2 pred=1"
+1176,complex,nonprofit_grant_management,False,False,False,"hop_count differs: gold=0 pred=1; return columns missing from prediction: {('prop', 'id')}"
+1177,complex,nonprofit_grant_management,False,False,False,"rel_types differ: gold=['ADDRESSED_BY', 'CONDUCTED', 'RELATES_TO', 'VERIFIED_BY'] pred=['ADDRESSED_BY', 'RELATES_TO', 'VERIFIED_BY']; hop_count differs: gold=4 pred=3; return columns missing from prediction: {('prop', 'id')}"
+1178,easy,public_library_management,False,True,True,
+1179,easy,public_library_management,False,True,True,
+1180,medium,public_library_management,False,False,False,"rel_types differ: gold=[] pred=['PLACED']; return columns missing from prediction: {('prop', 'request_date'), ('prop', 'priority_rank')}"
+1181,medium,public_library_management,False,True,True,
+1182,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'role'), ('prop', 'weekly_hours')}"
+1183,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'subject_category')}"
+1184,easy,public_library_management,True,True,True,
+1185,easy,public_library_management,False,True,True,
+1186,easy,public_library_management,False,True,True,
+1187,easy,public_library_management,False,True,True,
+1188,easy,public_library_management,False,True,True,
+1189,easy,public_library_management,True,True,True,
+1190,easy,public_library_management,False,True,True,
+1191,easy,public_library_management,False,True,True,
+1192,easy,public_library_management,False,True,True,
+1193,easy,public_library_management,True,True,True,
+1194,easy,public_library_management,False,False,False,"where_conditions differ: missing={('returned', '=', 'false')} extra=set()"
+1195,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1196,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1197,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1198,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1199,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1200,easy,public_library_management,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'membership_type')}"
+1201,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+1202,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'item_type')}"
+1203,easy,public_library_management,True,True,True,
+1204,easy,public_library_management,False,False,False,aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True
+1205,easy,public_library_management,True,True,True,
+1206,easy,public_library_management,False,True,True,
+1207,medium,public_library_management,False,True,True,
+1208,easy,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'due_date')}"
+1209,easy,public_library_management,False,True,True,
+1210,easy,public_library_management,False,True,True,
+1211,medium,public_library_management,False,False,False,"rel_types differ: gold=['ASSESSED_FOR'] pred=['ACQUIRED_FROM', 'ASSESSED_FOR']; aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+1212,easy,public_library_management,False,True,True,
+1213,medium,public_library_management,False,True,True,
+1214,medium,public_library_management,False,True,True,
+1215,medium,public_library_management,False,True,True,
+1216,complex,public_library_management,False,True,True,
+1217,medium,public_library_management,False,True,True,
+1218,complex,public_library_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+1219,medium,public_library_management,False,False,False,"where_conditions differ: missing={('renewal_count', '>=', '1')} extra={('renewal_count', '>', '0')}"
+1220,complex,public_library_management,False,False,False,"aggregations differ: gold=['collect', 'sum'] pred=['sum']; optional_match differs: gold=True pred=False; return columns missing from prediction: {('agg', 'collect:amount_due')}"
+1221,medium,public_library_management,False,False,False,"labels differ: gold=['Collection', 'Hold', 'Item', 'Patron'] pred=['Collection', 'Hold', 'Item']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'request_date')}"
+1222,complex,public_library_management,False,False,False,"rel_types differ: gold=['ASSESSED_FOR', 'HOUSED_AT', 'OWES'] pred=['HOUSED_AT', 'OWES']; hop_count differs: gold=4 pred=3"
+1223,complex,public_library_management,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('agg', 'count:*')}"
+1224,medium,public_library_management,False,True,True,
+1225,medium,public_library_management,False,False,False,"aggregations differ: gold=[] pred=['max']; return columns missing from prediction: {('prop', 'replacement_cost')}"
+1226,medium,public_library_management,False,False,False,"rel_types differ: gold=['ASSESSED_FOR', 'OWES'] pred=['ASSESSED_FOR']; hop_count differs: gold=3 pred=2"
+1227,medium,public_library_management,False,True,True,
+1228,medium,public_library_management,False,True,True,
+1229,complex,public_library_management,False,True,True,
+1230,complex,public_library_management,False,False,False,"aggregations differ: gold=['sum'] pred=['count', 'sum']"
+1231,medium,public_library_management,True,True,True,
+1232,complex,public_library_management,False,False,False,"aggregations differ: gold=['avg'] pred=['avg', 'count']"
+1233,complex,public_library_management,False,False,False,"aggregations differ: gold=[] pred=['count']; return columns missing from prediction: {('prop', 'membership_type'), ('prop', 'id')}"
+1234,medium,public_library_management,False,False,False,"labels differ: gold=['Branch', 'Fine', 'Item', 'Patron'] pred=['Branch', 'Fine', 'Item']; rel_types differ: gold=['HOUSED_AT', 'OWES'] pred=['HOUSED_AT']; aggregations differ: gold=['count', 'sum'] pred=['sum']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('agg', 'count:*')}"
+1235,complex,public_library_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+1236,medium,public_library_management,False,True,True,
+1237,complex,public_library_management,False,True,True,
+1238,medium,public_library_management,False,False,False,"where_conditions differ: missing=set() extra={('paid', '=', 'false')}"
+1239,medium,public_library_management,False,True,True,
+1240,medium,public_library_management,False,True,True,
+1241,medium,public_library_management,False,True,True,
+1242,complex,public_library_management,False,False,False,"where_conditions differ: missing={('reason', '=', 'damaged item')} extra=set()"
+1243,medium,public_library_management,False,False,False,"where_conditions differ: missing=set() extra={('vendor_type', '=', 'publisher')}"
+1244,medium,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'renewal_count')}"
+1245,medium,public_library_management,False,True,True,
+1246,medium,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'subject_category')}"
+1247,medium,public_library_management,False,False,False,"labels differ: gold=['Hold', 'Item', 'Patron'] pred=['Hold', 'Item']; rel_types differ: gold=['PLACED', 'REQUESTS'] pred=['REQUESTS']; hop_count differs: gold=2 pred=1"
+1248,medium,public_library_management,False,False,False,"labels differ: gold=['Fine', 'Item', 'Patron'] pred=['Fine', 'Patron']; rel_types differ: gold=['ASSESSED_FOR', 'OWES'] pred=['OWES']; hop_count differs: gold=2 pred=1"
+1249,medium,public_library_management,False,True,True,
+1250,medium,public_library_management,False,True,True,
+1251,medium,public_library_management,False,True,True,
+1252,medium,public_library_management,False,False,False,"labels differ: gold=['Branch', 'Fine', 'Item', 'Patron'] pred=['Branch', 'Fine', 'Item']; rel_types differ: gold=['ASSESSED_FOR', 'HOUSED_AT', 'OWES'] pred=['ASSESSED_FOR', 'HOUSED_AT']; hop_count differs: gold=3 pred=2"
+1253,medium,public_library_management,False,False,False,"rel_types differ: gold=['BELONGS_TO'] pred=['ACQUIRED_FROM', 'BELONGS_TO']"
+1254,medium,public_library_management,False,True,True,
+1255,medium,public_library_management,False,False,False,"labels differ: gold=['Fine', 'Item', 'Patron'] pred=['Fine', 'Patron']; rel_types differ: gold=['ASSESSED_FOR', 'OWES'] pred=['OWES']; hop_count differs: gold=2 pred=1"
+1256,medium,public_library_management,False,True,True,
+1257,medium,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+1258,medium,public_library_management,False,False,False,"labels differ: gold=['Fine', 'Item', 'Patron'] pred=['Fine', 'Item']; rel_types differ: gold=['ASSESSED_FOR', 'OWES'] pred=['ASSESSED_FOR']; hop_count differs: gold=2 pred=1"
+1259,medium,public_library_management,False,True,True,
+1260,medium,public_library_management,False,True,True,
+1261,medium,public_library_management,False,False,True,"return columns missing from prediction: {('prop', 'subject_category')}"
+1262,medium,public_library_management,False,True,True,
+1263,medium,public_library_management,False,True,True,
+1264,medium,public_library_management,False,False,False,"labels differ: gold=['Fine', 'Item', 'Patron'] pred=['Fine', 'Item']; rel_types differ: gold=['ASSESSED_FOR', 'OWES'] pred=['ASSESSED_FOR']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'call_number')}"
+1265,medium,public_library_management,False,True,True,
+1266,medium,public_library_management,False,False,False,"labels differ: gold=['Hold', 'Item', 'Patron'] pred=['Hold', 'Item']; rel_types differ: gold=['PLACED', 'REQUESTS'] pred=['REQUESTS']; hop_count differs: gold=2 pred=1"
+1267,medium,public_library_management,False,True,True,
+1268,medium,public_library_management,False,True,True,
+1269,medium,public_library_management,False,False,False,"rel_types differ: gold=['HOUSED_AT'] pred=['ACQUIRED_FROM', 'HOUSED_AT']; return columns missing from prediction: {('prop', 'call_number')}"
+1270,medium,public_library_management,False,True,True,
+1271,medium,public_library_management,False,True,True,
+1272,medium,public_library_management,False,True,True,
+1273,medium,public_library_management,False,True,True,
+1274,medium,public_library_management,False,True,True,
+1275,medium,public_library_management,False,True,True,
+1276,medium,public_library_management,False,True,True,
+1277,medium,public_library_management,False,True,True,
+1278,medium,public_library_management,False,True,True,
+1279,medium,public_library_management,False,False,False,"labels differ: gold=['Hold', 'Item', 'Patron'] pred=['Hold', 'Patron']; rel_types differ: gold=['PLACED', 'REQUESTS'] pred=['PLACED']; hop_count differs: gold=2 pred=1"
+1280,medium,public_library_management,False,True,True,
+1281,medium,public_library_management,False,True,True,
+1282,medium,public_library_management,False,True,True,
+1283,complex,public_library_management,False,False,False,"labels differ: gold=['Fine', 'Item', 'Patron'] pred=['Fine', 'Patron']; rel_types differ: gold=['ASSESSED_FOR', 'OWES'] pred=['OWES']; hop_count differs: gold=2 pred=1"
+1284,complex,public_library_management,False,True,True,
+1285,complex,public_library_management,False,True,True,
+1286,complex,public_library_management,False,True,True,
+1287,complex,public_library_management,False,True,True,
+1288,complex,public_library_management,False,True,True,
+1289,complex,public_library_management,False,True,True,
+1290,complex,public_library_management,False,True,True,
+1291,complex,public_library_management,False,True,True,
+1292,medium,public_library_management,False,False,False,"labels differ: gold=['Branch', 'Fine', 'Item'] pred=['Branch', 'Collection', 'Fine', 'Item']; rel_types differ: gold=['ASSESSED_FOR', 'HOUSED_AT'] pred=['ASSESSED_FOR', 'BELONGS_TO', 'HOUSED_AT']; hop_count differs: gold=2 pred=3; optional_match differs: gold=False pred=True; where_conditions differ: missing=set() extra={('item_type', '=', 'book'), ('subject_category', '=', 'fiction')}"
+1293,complex,public_library_management,False,True,True,
+1294,complex,public_library_management,False,True,True,
+1295,complex,public_library_management,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('prop', 'name')}"
+1296,complex,public_library_management,False,False,True,"return columns missing from prediction: {('expr', ""'unpaidfine'""), ('expr', ""'overduecheckout'"")}"
+1297,complex,public_library_management,True,True,True,
+1298,complex,public_library_management,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('agg', 'count:*')}"
+1299,complex,public_library_management,False,True,True,
+1300,complex,public_library_management,False,True,True,
+1301,complex,public_library_management,False,True,True,
+1302,complex,public_library_management,False,True,True,
+1303,complex,public_library_management,False,False,True,"return columns missing from prediction: {('expr', ""'onhold'""), ('expr', ""'checkedout-duesoon'"")}"
+1304,complex,public_library_management,False,True,True,
+1305,complex,public_library_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+1306,complex,public_library_management,False,False,False,"hop_count differs: gold=3 pred=5; where_conditions differ: missing={('name', '=', 'science fiction')} extra={('subject_category', '=', 'science fiction')}"

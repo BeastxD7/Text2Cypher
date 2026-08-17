@@ -1,0 +1,746 @@
+row_index,complexity,domain,exact_match,semantic_match,core_logic_match,reasons
+0,easy,appliance_repair_service,True,True,True,
+1,easy,appliance_repair_service,True,True,True,
+2,easy,appliance_repair_service,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+3,easy,appliance_repair_service,False,True,True,
+4,easy,appliance_repair_service,False,True,True,
+5,easy,appliance_repair_service,False,False,True,"return columns missing from prediction: {('prop', 'work_type')}"
+6,complex,appliance_repair_service,False,True,True,
+7,easy,appliance_repair_service,False,True,True,
+8,complex,appliance_repair_service,False,True,True,
+9,easy,automotive_dealership_service,False,True,True,
+10,easy,automotive_dealership_service,True,True,True,
+11,easy,automotive_dealership_service,False,True,True,
+12,easy,automotive_dealership_service,False,True,True,
+13,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'order_total')}"
+14,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'part_number')}"
+15,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+16,easy,automotive_dealership_service,False,True,True,
+17,medium,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'reorder_threshold'), ('prop', 'quantity_on_hand'), ('prop', 'name')}"
+18,easy,automotive_dealership_service,True,True,True,
+19,easy,automotive_dealership_service,False,True,True,
+20,easy,automotive_dealership_service,False,True,True,
+21,easy,automotive_dealership_service,False,True,True,
+22,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'recommended_action'), ('prop', 'id')}"
+23,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'model')}"
+24,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'model')}"
+25,medium,automotive_dealership_service,False,False,False,"labels differ: gold=['AppraisalReport', 'AuctionListing', 'Vehicle'] pred=['AppraisalReport', 'AuctionListing', 'TradeInOffer', 'Vehicle']; rel_types differ: gold=['ASSESSES', 'LISTED_IN'] pred=['ASSESSES', 'BASED_ON', 'FOR_VEHICLE', 'LISTED_IN']; hop_count differs: gold=2 pred=4; return columns missing from prediction: {('prop', 'auction_house')}"
+26,easy,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('expr', '(ar.estimated_value-tio.offer_amount)')}"
+27,complex,appliance_repair_service,False,True,True,
+28,complex,appliance_repair_service,False,True,True,
+29,complex,appliance_repair_service,False,True,True,
+30,complex,appliance_repair_service,False,False,True,"return columns missing from prediction: {('prop', 'contract_tier')}"
+31,easy,appliance_repair_service,False,True,True,
+32,medium,appliance_repair_service,False,True,True,
+33,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('agg', 'sum:order_total'), ('agg', 'count:*')}"
+34,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'region')}"
+35,complex,automotive_dealership_service,False,False,False,"rel_types differ: gold=['OPERATES'] pred=['OPERATES', 'STOCKS']; where_conditions differ: missing=set() extra={('reorder_threshold', '>', '0')}"
+36,complex,automotive_dealership_service,False,False,False,"rel_types differ: gold=['RESTOCKS'] pred=['RESTOCKS', 'STOCKS']; aggregations differ: gold=['count'] pred=[]; where_conditions differ: missing=set() extra={('reorder_threshold', '>', '0'), ('order_status', '=', 'pending')}; return columns missing from prediction: {('prop', 'name')}"
+37,medium,automotive_dealership_service,False,False,False,"rel_types differ: gold=['RESTOCKS', 'SUPPLIES'] pred=['ORDERED_FROM', 'SUPPLIES']; aggregations differ: gold=['avg', 'collect', 'count'] pred=['avg', 'count']; return columns missing from prediction: {('agg', 'avg:unit_cost')}"
+38,easy,automotive_dealership_service,True,True,True,
+39,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('agg', 'avg:estimated_value')}"
+40,complex,automotive_dealership_service,False,False,True,"return columns missing from prediction: {('prop', 'city')}"
+41,complex,automotive_dealership_service,False,True,True,
+42,complex,automotive_dealership_service,False,True,True,
+43,medium,automotive_dealership_service,False,True,True,
+44,easy,automotive_dealership_service,True,True,True,
+45,complex,coworking_space_management,False,True,True,
+46,complex,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+47,complex,coworking_space_management,False,True,True,
+48,complex,coworking_space_management,False,False,False,"where_conditions differ: missing={('priority', '=', 'urgent'), ('priority', '=', 'high')} extra={('priority', 'in', ""['high', 'urgent']"")}"
+49,easy,coworking_space_management,True,True,True,
+50,medium,coworking_space_management,False,True,True,
+51,complex,dental_practice_management,False,True,True,
+52,complex,dental_practice_management,False,False,False,"rel_types differ: gold=['ASSIGNED_TO', 'LED_TO', 'PERFORMED', 'REFERRED'] pred=['ASSIGNED_TO', 'PERFORMED', 'REFERRED']; hop_count differs: gold=4 pred=3"
+53,complex,dental_practice_management,False,True,True,
+54,complex,dental_practice_management,False,False,True,"return columns missing from prediction: {('prop', 'tooth_number'), ('prop', 'chief_complaint')}"
+55,easy,dental_practice_management,True,True,True,
+56,medium,dental_practice_management,False,True,True,
+57,easy,ecommerce_order_fulfillment,False,True,True,
+58,easy,ecommerce_order_fulfillment,False,True,True,
+59,complex,ecommerce_order_fulfillment,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+60,complex,ecommerce_order_fulfillment,False,False,False,"labels differ: gold=['Contract', 'Item', 'POLine'] pred=['Contract', 'Item', 'POLine', 'PurchaseOrder']; rel_types differ: gold=['COVERS_ITEM', 'FOR_ITEM'] pred=['COVERS_ITEM', 'FOR_ITEM', 'HAS_LINE']; hop_count differs: gold=2 pred=3"
+61,complex,ecommerce_order_fulfillment,False,False,False,aggregations differ: gold=['count'] pred=[]
+62,complex,ecommerce_order_fulfillment,False,True,True,
+63,complex,event_ticketing,False,False,False,"labels differ: gold=['Fan', 'Game', 'Purchase', 'Season', 'Team'] pred=['Game', 'Purchase', 'Team']; rel_types differ: gold=['FOR_GAME', 'INCLUDES_GAME', 'MADE_PURCHASE', 'PLAYS_IN'] pred=['FOR_GAME', 'HOSTED_BY']; hop_count differs: gold=4 pred=2; where_conditions differ: missing={('purchase_channel', '=', 'online'), ('purchase_channel', '=', 'mobile app')} extra={('purchase_channel', 'in', ""['online', 'mobile app']"")}"
+64,complex,event_ticketing,False,False,True,"return columns missing from prediction: {('prop', 'loyalty_points')}"
+65,complex,event_ticketing,False,True,True,
+66,complex,event_ticketing,False,True,True,
+67,easy,event_ticketing,False,True,True,
+68,easy,event_ticketing,False,False,True,"return columns missing from prediction: {('prop', 'section')}"
+69,complex,film_production_management,False,True,True,
+70,complex,film_production_management,False,True,True,
+71,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Department', 'Production', 'Role'] pred=['CallSheet', 'CrewMember', 'Department', 'Production', 'Role', 'ShootDay']; rel_types differ: gold=['BELONGS_TO_DEPARTMENT', 'HAS_ROLE', 'WORKS_ON'] pred=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF']; hop_count differs: gold=3 pred=5"
+72,complex,film_production_management,False,True,True,
+73,easy,film_production_management,True,True,True,
+74,easy,film_production_management,True,True,True,
+75,complex,film_production_management,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+76,complex,film_production_management,False,True,True,
+77,complex,film_production_management,False,True,True,
+78,complex,film_production_management,False,False,False,aggregations differ: gold=['count'] pred=[]; optional_match differs: gold=True pred=False
+79,easy,film_production_management,False,True,True,
+80,easy,film_production_management,False,True,True,
+81,easy,gym_fitness_membership,True,True,True,
+82,easy,gym_fitness_membership,False,True,True,
+83,complex,gym_fitness_membership,False,True,True,
+84,complex,gym_fitness_membership,False,False,False,"where_conditions differ: missing={('severity', '=', 'critical'), ('severity', '=', 'high')} extra={('severity', 'in', ""['high', 'critical']"")}"
+85,complex,gym_fitness_membership,False,False,False,"rel_types differ: gold=['TRAINS_WITH'] pred=['ATTENDS', 'TRAINS_WITH']; where_conditions differ: missing={('attendance_status', '=', 'completed')} extra=set()"
+86,complex,gym_fitness_membership,False,True,True,
+87,complex,it_helpdesk_asset_management,False,True,True,
+88,complex,it_helpdesk_asset_management,False,False,False,"labels differ: gold=['Asset', 'Employee', 'Location', 'PurchaseOrder', 'Vendor'] pred=['Asset', 'Employee', 'Location', 'Vendor']; rel_types differ: gold=['ASSIGNED_TO', 'PLACED_WITH', 'PROCURED', 'WORKS_AT'] pred=['ASSIGNED_TO', 'DEPLOYED_AT', 'PROCURED', 'WORKS_AT']"
+89,complex,it_helpdesk_asset_management,False,True,True,
+90,complex,it_helpdesk_asset_management,False,True,True,
+91,easy,it_helpdesk_asset_management,False,True,True,
+92,easy,it_helpdesk_asset_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+93,easy,laundry_drycleaning_chain,True,True,True,
+94,medium,laundry_drycleaning_chain,False,True,True,
+95,complex,laundry_drycleaning_chain,False,True,True,
+96,complex,laundry_drycleaning_chain,False,False,False,"rel_types differ: gold=['AT_BRANCH', 'FOR_JOB', 'PERFORMED_BY', 'REQUESTED'] pred=['AT_BRANCH', 'FOR_JOB', 'PAID_VIA', 'PERFORMED_BY']; return columns missing from prediction: {('agg', 'sum:amount'), ('agg', 'count:*')}"
+97,complex,laundry_drycleaning_chain,False,False,True,"return columns missing from prediction: {('prop', 'points_balance')}"
+98,complex,laundry_drycleaning_chain,False,True,True,
+99,complex,parking_garage_operations,False,False,True,"return columns missing from prediction: {('prop', 'zone_type')}"
+100,complex,parking_garage_operations,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('agg', 'count:*')}"
+101,complex,parking_garage_operations,False,False,False,"where_conditions differ: missing={('zone_type', '=', 'metered')} extra={('hourly_rate', '>', '0')}"
+102,complex,parking_garage_operations,False,False,False,"where_conditions differ: missing={('sensor_type', '=', 'occupancy')} extra=set()"
+103,easy,parking_garage_operations,False,True,True,
+104,easy,parking_garage_operations,False,True,True,
+105,complex,saas_subscription_billing,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+106,complex,saas_subscription_billing,False,False,True,"return columns missing from prediction: {('expr', 'sum(li.quantity*li.unit_price_usd)')}"
+107,complex,saas_subscription_billing,False,False,False,"where_conditions differ: missing={('method_type', '=', 'ach'), ('method_type', '=', 'wire')} extra={('method_type', 'in', ""['ach', 'wire']"")}"
+108,complex,saas_subscription_billing,False,False,False,"labels differ: gold=['Account', 'Payment', 'PaymentMethod'] pred=['Payment', 'PaymentMethod']; rel_types differ: gold=['CHARGED_TO', 'REGISTERED_METHOD'] pred=['CHARGED_TO']; hop_count differs: gold=2 pred=1"
+109,easy,saas_subscription_billing,False,True,True,
+110,easy,saas_subscription_billing,False,True,True,
+111,easy,telecom_customer_operations,False,True,True,
+112,easy,telecom_customer_operations,False,False,False,"where_conditions differ: missing=set() extra={('on_call', '=', 'true')}"
+113,complex,telecom_customer_operations,False,True,True,
+114,complex,telecom_customer_operations,False,False,False,"where_conditions differ: missing={('severity', '=', 'critical'), ('severity', '=', 'high')} extra={('severity', 'in', ""['critical', 'high']"")}"
+115,complex,telecom_customer_operations,False,False,False,"rel_types differ: gold=['ASSIGNED_TO', 'IMPACTS', 'RESOLVES'] pred=['ASSIGNED_TO', 'CAUSED_BY', 'IMPACTS', 'RESOLVES']; aggregations differ: gold=['avg', 'sum'] pred=['avg', 'count', 'sum']; where_conditions differ: missing=set() extra={('resolved', '=', 'true')}"
+116,complex,telecom_customer_operations,False,False,False,"rel_types differ: gold=['IMPACTS'] pred=['IMPACTS', 'RESOLVES']; return columns missing from prediction: {('prop', 'id')}"
+117,easy,telecom_customer_operations,False,True,True,
+118,easy,telecom_customer_operations,False,True,True,
+119,complex,telecom_customer_operations,False,True,True,
+120,complex,telecom_customer_operations,False,False,False,"labels differ: gold=['Carrier', 'PortRequest', 'SubscriberProfile'] pred=['Carrier', 'PortRequest']; rel_types differ: gold=['PORTING_TO', 'REQUESTED'] pred=['PORTING_TO']; hop_count differs: gold=2 pred=1; where_conditions differ: missing={('rejection_reason', '=', 'invalidid'), ('rejection_reason', '=', 'accountmismatch')} extra={('rejection_reason', 'in', ""['invalidid', 'accountmismatch']"")}"
+121,complex,telecom_customer_operations,False,True,True,
+122,complex,telecom_customer_operations,False,True,True,
+123,complex,wedding_event_planning,True,True,True,
+124,complex,wedding_event_planning,False,False,True,"return columns missing from prediction: {('prop', 'expertise_area')}"
+125,complex,wedding_event_planning,False,False,True,"return columns missing from prediction: {('agg', 'sum:*')}"
+126,complex,wedding_event_planning,False,True,True,
+127,easy,wedding_event_planning,False,True,True,
+128,easy,wedding_event_planning,False,False,False,"labels differ: gold=['Session'] pred=['Event', 'Session', 'Speaker']; rel_types differ: gold=[] pred=['INCLUDES', 'PRESENTED_BY']; hop_count differs: gold=0 pred=2; return columns missing from prediction: {('prop', 'scheduled_date')}"
+129,easy,coworking_space_management,True,True,True,
+130,easy,coworking_space_management,True,True,True,
+131,easy,coworking_space_management,False,True,True,
+132,easy,coworking_space_management,False,True,True,
+133,easy,coworking_space_management,False,True,True,
+134,easy,coworking_space_management,False,False,True,"return columns missing from prediction: {('prop', 'amount')}"
+135,complex,coworking_space_management,False,False,False,rel_types differ: gold=[] pred=['FOR_UNIT']
+136,easy,coworking_space_management,False,True,True,
+137,easy,coworking_space_management,False,True,True,
+138,easy,dental_practice_management,False,True,True,
+139,easy,dental_practice_management,False,True,True,
+140,easy,dental_practice_management,False,True,True,
+141,easy,dental_practice_management,False,True,True,
+142,easy,dental_practice_management,False,True,True,
+143,complex,dental_practice_management,False,False,True,"return columns missing from prediction: {('prop', 'chief_complaint')}"
+144,easy,dental_practice_management,False,False,True,"return columns missing from prediction: {('prop', 'dosage')}"
+145,easy,dental_practice_management,False,True,True,
+146,easy,dental_practice_management,False,True,True,
+147,easy,ecommerce_order_fulfillment,False,True,True,
+148,easy,ecommerce_order_fulfillment,False,True,True,
+149,easy,ecommerce_order_fulfillment,False,True,True,
+150,easy,ecommerce_order_fulfillment,False,True,True,
+151,complex,ecommerce_order_fulfillment,False,False,False,"aggregations differ: gold=['count'] pred=[]; optional_match differs: gold=True pred=False; where_conditions differ: missing={('payment_status', '=', 'completed')} extra={('payment_status', '=', 'pending')}"
+152,easy,ecommerce_order_fulfillment,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+153,easy,ecommerce_order_fulfillment,False,True,True,
+154,easy,ecommerce_order_fulfillment,False,True,True,
+155,easy,ecommerce_order_fulfillment,False,False,False,"labels differ: gold=['Item', 'POLine'] pred=['Item', 'POLine', 'PurchaseOrder']; rel_types differ: gold=['FOR_ITEM'] pred=['FOR_ITEM', 'HAS_LINE']; hop_count differs: gold=1 pred=2"
+156,medium,event_ticketing,True,True,True,
+157,easy,event_ticketing,True,True,True,
+158,easy,event_ticketing,False,False,True,"return columns missing from prediction: {('prop', 'price_level')}"
+159,easy,event_ticketing,False,True,True,
+160,easy,event_ticketing,False,False,False,"labels differ: gold=['Game', 'Purchase'] pred=['Fan', 'Game', 'Purchase']; rel_types differ: gold=['FOR_GAME'] pred=['FOR_GAME', 'MADE_PURCHASE']; hop_count differs: gold=1 pred=2"
+161,easy,event_ticketing,False,True,True,
+162,easy,event_ticketing,False,True,True,
+163,complex,event_ticketing,False,False,False,"labels differ: gold=['SeasonPackage', 'Seat'] pred=['SeasonPackage', 'Seat', 'Team']; rel_types differ: gold=['ASSIGNED_SEAT'] pred=['ASSIGNED_SEAT', 'HAS_SEAT']; aggregations differ: gold=['count'] pred=[]; hop_count differs: gold=1 pred=2"
+164,easy,event_ticketing,False,False,True,"return columns missing from prediction: {('prop', 'stand_location')}"
+165,easy,film_production_management,False,True,True,
+166,easy,film_production_management,False,True,True,
+167,easy,film_production_management,False,True,True,
+168,medium,film_production_management,False,False,True,"return columns missing from prediction: {('agg', 'avg:day_rate')}"
+169,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+170,complex,film_production_management,False,False,False,aggregations differ: gold=['count'] pred=[]
+171,easy,film_production_management,False,False,False,"where_conditions differ: missing={('name', '=', 'shoot day 1')} extra={('day_number', '=', '1')}"
+172,easy,film_production_management,False,True,True,
+173,medium,film_production_management,False,True,True,
+174,easy,film_production_management,False,True,True,
+175,easy,film_production_management,False,True,True,
+176,medium,film_production_management,False,False,False,"labels differ: gold=['Equipment', 'EquipmentCategory', 'Production', 'RentalHouse', 'RentalOrder'] pred=['Equipment', 'Production', 'RentalHouse', 'RentalOrder']; rel_types differ: gold=['BELONGS_TO_CATEGORY', 'INCLUDES_ITEM', 'PLACED_FOR', 'SUPPLIED_BY'] pred=['INCLUDES_ITEM', 'PLACED_FOR', 'SUPPLIED_BY']; hop_count differs: gold=4 pred=3; where_conditions differ: missing={('name', '=', 'camera bodies')} extra={('category', '=', 'camera')}"
+177,easy,film_production_management,False,False,False,"where_conditions differ: missing=set() extra={('condition', '=', 'needs repair')}"
+178,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+179,complex,film_production_management,False,True,True,
+180,easy,film_production_management,False,True,True,
+181,easy,film_production_management,False,True,True,
+182,medium,film_production_management,False,True,True,
+183,easy,gym_fitness_membership,False,True,True,
+184,easy,gym_fitness_membership,False,True,True,
+185,easy,gym_fitness_membership,False,True,True,
+186,medium,gym_fitness_membership,False,True,True,
+187,easy,gym_fitness_membership,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+188,complex,gym_fitness_membership,False,False,False,"rel_types differ: gold=[] pred=['ATTENDS']; where_conditions differ: missing={('attendance_status', '=', 'completed')} extra=set()"
+189,easy,gym_fitness_membership,False,True,True,
+190,easy,gym_fitness_membership,False,True,True,
+191,medium,gym_fitness_membership,False,True,True,
+192,easy,it_helpdesk_asset_management,False,False,False,"where_conditions differ: missing={('name', '=', 'po1')} extra={('order_number', '=', 'po1')}"
+193,easy,it_helpdesk_asset_management,False,True,True,
+194,easy,it_helpdesk_asset_management,False,False,False,"labels differ: gold=['Asset', 'Employee', 'PurchaseOrder', 'Vendor'] pred=['Asset', 'Employee', 'Location', 'PurchaseOrder', 'Vendor']; rel_types differ: gold=['ASSIGNED_TO', 'PLACED_WITH', 'PROCURED'] pred=['ASSIGNED_TO', 'DEPLOYED_AT', 'PLACED_WITH', 'PROCURED', 'WORKS_AT']; hop_count differs: gold=3 pred=5"
+195,easy,it_helpdesk_asset_management,True,True,True,
+196,easy,it_helpdesk_asset_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+197,complex,it_helpdesk_asset_management,False,True,True,
+198,easy,it_helpdesk_asset_management,False,True,True,
+199,easy,it_helpdesk_asset_management,False,True,True,
+200,easy,it_helpdesk_asset_management,False,True,True,
+201,easy,laundry_drycleaning_chain,True,True,True,
+202,easy,laundry_drycleaning_chain,False,False,True,"return columns missing from prediction: {('prop', 'specialty')}"
+203,easy,laundry_drycleaning_chain,False,False,False,"labels differ: gold=['Branch', 'SupplyOrder', 'Tailor'] pred=['Branch', 'Supplier', 'SupplyOrder', 'Tailor']; rel_types differ: gold=['DELIVERED_TO', 'WORKS_AT'] pred=['DELIVERED_TO', 'FULFILLED', 'WORKS_AT']; hop_count differs: gold=2 pred=3; return columns missing from prediction: {('prop', 'id')}"
+204,easy,laundry_drycleaning_chain,False,False,False,"labels differ: gold=['AlterationJob', 'Customer', 'Transaction'] pred=['AlterationJob', 'Tailor', 'Transaction']; rel_types differ: gold=['FOR_JOB', 'PAID_VIA'] pred=['FOR_JOB', 'PERFORMED_BY']; return columns missing from prediction: {('prop', 'amount')}"
+205,medium,laundry_drycleaning_chain,False,False,False,"labels differ: gold=['AlterationJob', 'Branch', 'Transaction'] pred=['AlterationJob', 'Branch']; rel_types differ: gold=['AT_BRANCH', 'FOR_JOB'] pred=['AT_BRANCH']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('agg', 'sum:amount')}"
+206,easy,laundry_drycleaning_chain,False,False,True,"return columns missing from prediction: {('prop', 'delivered')}"
+207,complex,laundry_drycleaning_chain,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+208,easy,laundry_drycleaning_chain,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+209,easy,laundry_drycleaning_chain,False,True,True,
+210,easy,parking_garage_operations,True,True,True,
+211,easy,parking_garage_operations,True,True,True,
+212,easy,parking_garage_operations,True,True,True,
+213,easy,parking_garage_operations,False,True,True,
+214,easy,parking_garage_operations,False,False,True,"return columns missing from prediction: {('prop', 'badge_number')}"
+215,easy,parking_garage_operations,False,False,True,"return columns missing from prediction: {('prop', 'fine_amount')}"
+216,complex,parking_garage_operations,False,True,True,
+217,easy,parking_garage_operations,False,False,True,"return columns missing from prediction: {('prop', 'filed_date')}"
+218,easy,parking_garage_operations,True,True,True,
+219,easy,saas_subscription_billing,False,True,True,
+220,easy,saas_subscription_billing,False,True,True,
+221,medium,saas_subscription_billing,False,True,True,
+222,easy,saas_subscription_billing,False,True,True,
+223,easy,saas_subscription_billing,False,False,False,"where_conditions differ: missing={('payment_status', 'in', ""['pending', 'overdue']"")} extra={('payment_status', '=', 'pending')}; return columns missing from prediction: {('prop', 'payment_status')}"
+224,easy,saas_subscription_billing,True,True,True,
+225,easy,saas_subscription_billing,True,True,True,
+226,easy,saas_subscription_billing,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+227,easy,saas_subscription_billing,False,True,True,
+228,easy,telecom_customer_operations,False,True,True,
+229,easy,telecom_customer_operations,False,True,True,
+230,easy,telecom_customer_operations,False,True,True,
+231,easy,telecom_customer_operations,False,True,True,
+232,easy,telecom_customer_operations,False,True,True,
+233,complex,telecom_customer_operations,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+234,easy,telecom_customer_operations,False,True,True,
+235,easy,telecom_customer_operations,False,False,False,"where_conditions differ: missing={('name', '=', 'fibernode-88')} extra={('id', '=', 'fibernode-88')}; return columns missing from prediction: {('prop', 'name')}"
+236,easy,telecom_customer_operations,False,True,True,
+237,easy,telecom_customer_operations,False,True,True,
+238,easy,telecom_customer_operations,False,True,True,
+239,easy,telecom_customer_operations,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+240,easy,telecom_customer_operations,False,True,True,
+241,easy,telecom_customer_operations,False,True,True,
+242,easy,telecom_customer_operations,False,False,True,"return columns missing from prediction: {('prop', 'id')}"
+243,complex,telecom_customer_operations,False,True,True,
+244,easy,telecom_customer_operations,False,True,True,
+245,easy,telecom_customer_operations,False,False,True,"return columns missing from prediction: {('prop', 'transfer_type')}"
+246,easy,wedding_event_planning,True,True,True,
+247,easy,wedding_event_planning,True,True,True,
+248,easy,wedding_event_planning,False,True,True,
+249,easy,wedding_event_planning,False,True,True,
+250,easy,wedding_event_planning,True,True,True,
+251,complex,wedding_event_planning,False,True,True,
+252,easy,wedding_event_planning,False,True,True,
+253,easy,wedding_event_planning,False,True,True,
+254,easy,wedding_event_planning,False,True,True,
+255,easy,dental_practice_management,False,True,True,
+256,easy,dental_practice_management,False,True,True,
+257,easy,dental_practice_management,False,True,True,
+258,easy,dental_practice_management,False,True,True,
+259,easy,film_production_management,False,True,True,
+260,easy,film_production_management,False,True,True,
+261,medium,film_production_management,False,True,True,
+262,medium,film_production_management,False,True,True,
+263,easy,saas_subscription_billing,False,True,True,
+264,easy,saas_subscription_billing,False,True,True,
+265,easy,saas_subscription_billing,True,True,True,
+266,easy,event_ticketing,False,True,True,
+267,easy,event_ticketing,False,True,True,
+268,easy,event_ticketing,False,True,True,
+269,complex,event_ticketing,False,False,False,"optional_match differs: gold=True pred=False; return columns missing from prediction: {('bare', 'node')}"
+270,easy,event_ticketing,False,True,True,
+271,easy,event_ticketing,False,False,False,"labels differ: gold=['Game', 'Purchase'] pred=['Fan', 'Game', 'Purchase']; rel_types differ: gold=['FOR_GAME'] pred=['FOR_GAME', 'MADE_PURCHASE']; hop_count differs: gold=1 pred=2"
+272,easy,event_ticketing,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+273,medium,event_ticketing,False,True,True,
+274,easy,event_ticketing,False,True,True,
+275,easy,event_ticketing,False,True,True,
+276,easy,event_ticketing,False,True,True,
+277,easy,event_ticketing,False,False,True,"return columns missing from prediction: {('agg', 'count:*'), ('agg', 'sum:attendance')}"
+278,easy,film_production_management,True,True,True,
+279,easy,film_production_management,False,True,True,
+280,easy,film_production_management,False,True,True,
+281,easy,film_production_management,False,True,True,
+282,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'start_date')}"
+283,easy,film_production_management,False,True,True,
+284,easy,film_production_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+285,easy,film_production_management,False,True,True,
+286,easy,film_production_management,False,True,True,
+287,easy,film_production_management,False,True,True,
+288,easy,film_production_management,False,True,True,
+289,easy,film_production_management,False,True,True,
+290,easy,film_production_management,False,True,True,
+291,easy,film_production_management,True,True,True,
+292,easy,film_production_management,False,True,True,
+293,easy,film_production_management,False,False,False,"rel_types differ: gold=['FOR_SHOOT_DAY', 'PART_OF'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; return columns missing from prediction: {('prop', 'call_time_override')}"
+294,easy,film_production_management,False,False,True,"return columns missing from prediction: {('bare', 'node'), ('prop', 'name')}"
+295,easy,film_production_management,False,True,True,
+296,medium,film_production_management,False,True,True,
+297,easy,film_production_management,False,True,True,
+298,easy,gym_fitness_membership,False,True,True,
+299,easy,gym_fitness_membership,True,True,True,
+300,easy,gym_fitness_membership,False,True,True,
+301,easy,gym_fitness_membership,False,True,True,
+302,easy,gym_fitness_membership,False,True,True,
+303,easy,gym_fitness_membership,False,True,True,
+304,easy,gym_fitness_membership,False,False,False,rel_types differ: gold=['TRAINS_WITH'] pred=[]
+305,easy,gym_fitness_membership,False,True,True,
+306,easy,gym_fitness_membership,False,True,True,
+307,easy,gym_fitness_membership,False,True,True,
+308,easy,gym_fitness_membership,False,True,True,
+309,easy,it_helpdesk_asset_management,False,True,True,
+310,complex,it_helpdesk_asset_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+311,easy,it_helpdesk_asset_management,False,True,True,
+312,easy,it_helpdesk_asset_management,False,True,True,
+313,easy,it_helpdesk_asset_management,False,True,True,
+314,easy,it_helpdesk_asset_management,False,False,True,"return columns missing from prediction: {('prop', 'status')}"
+315,easy,it_helpdesk_asset_management,False,True,True,
+316,easy,it_helpdesk_asset_management,False,True,True,
+317,easy,saas_subscription_billing,False,True,True,
+318,easy,saas_subscription_billing,False,True,True,
+319,easy,saas_subscription_billing,False,True,True,
+320,easy,saas_subscription_billing,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('agg', 'count:*')}"
+321,easy,saas_subscription_billing,True,True,True,
+322,easy,saas_subscription_billing,True,True,True,
+323,easy,saas_subscription_billing,False,True,True,
+324,easy,saas_subscription_billing,True,True,True,
+325,easy,saas_subscription_billing,False,True,True,
+326,easy,saas_subscription_billing,False,False,False,rel_types differ: gold=['REGISTERED_METHOD'] pred=[]
+327,easy,telecom_customer_operations,False,True,True,
+328,easy,telecom_customer_operations,False,True,True,
+329,easy,telecom_customer_operations,False,True,True,
+330,easy,telecom_customer_operations,False,True,True,
+331,easy,telecom_customer_operations,False,False,False,"labels differ: gold=['EscalationEvent', 'Outage'] pred=['EscalationEvent']; rel_types differ: gold=['ESCALATED_VIA'] pred=[]; hop_count differs: gold=1 pred=0"
+332,easy,telecom_customer_operations,False,True,True,
+333,easy,telecom_customer_operations,False,True,True,
+334,easy,telecom_customer_operations,False,True,True,
+335,easy,telecom_customer_operations,False,True,True,
+336,easy,telecom_customer_operations,False,True,True,
+337,easy,wedding_event_planning,False,True,True,
+338,easy,wedding_event_planning,False,False,False,"labels differ: gold=['Session', 'Speaker'] pred=['Event', 'Session', 'Speaker']; rel_types differ: gold=['PRESENTED_BY'] pred=['INCLUDES', 'PRESENTED_BY']; hop_count differs: gold=1 pred=2"
+339,easy,wedding_event_planning,False,True,True,
+340,easy,wedding_event_planning,False,False,False,"labels differ: gold=['Client', 'Event'] pred=['Client', 'Event', 'Venue']; rel_types differ: gold=['HOSTS'] pred=['HELD_AT', 'HOSTS']; hop_count differs: gold=1 pred=2"
+341,easy,wedding_event_planning,False,True,True,
+342,easy,wedding_event_planning,False,True,True,
+343,easy,wedding_event_planning,False,False,False,"labels differ: gold=['Session'] pred=['Event', 'Session']; rel_types differ: gold=[] pred=['INCLUDES']; hop_count differs: gold=0 pred=1"
+344,easy,wedding_event_planning,False,True,True,
+345,easy,wedding_event_planning,False,True,True,
+346,easy,telecom_customer_operations,False,False,True,"return columns missing from prediction: {('prop', 'severity')}"
+347,easy,telecom_customer_operations,False,True,True,
+348,complex,film_production_management,False,True,True,
+349,medium,film_production_management,False,True,True,
+350,medium,film_production_management,False,True,True,
+351,medium,film_production_management,False,True,True,
+352,easy,film_production_management,False,True,True,
+353,easy,film_production_management,False,True,True,
+354,easy,film_production_management,False,True,True,
+355,complex,film_production_management,False,True,True,
+356,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+357,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'shoot_date')}"
+358,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'document_number')}"
+359,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_rate')}"
+360,easy,film_production_management,True,True,True,
+361,easy,film_production_management,True,True,True,
+362,easy,film_production_management,False,True,True,
+363,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'call_time')}"
+364,easy,film_production_management,True,True,True,
+365,easy,film_production_management,True,True,True,
+366,medium,film_production_management,True,True,True,
+367,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'production_type')}"
+368,easy,film_production_management,True,True,True,
+369,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+370,easy,film_production_management,True,True,True,
+371,easy,film_production_management,False,True,True,
+372,medium,film_production_management,True,True,True,
+373,easy,film_production_management,False,True,True,
+374,medium,film_production_management,False,False,False,aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True
+375,easy,film_production_management,False,True,True,
+376,easy,film_production_management,False,True,True,
+377,easy,film_production_management,False,True,True,
+378,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+379,easy,film_production_management,False,True,True,
+380,easy,film_production_management,True,True,True,
+381,easy,film_production_management,False,True,True,
+382,complex,film_production_management,False,True,True,
+383,medium,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+384,easy,film_production_management,False,True,True,
+385,easy,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'shoot_date')}"
+386,medium,film_production_management,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+387,complex,film_production_management,False,True,True,
+388,medium,film_production_management,False,True,True,
+389,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['MEMBER_OF']; where_conditions differ: missing={('jurisdiction', '=', 'california')} extra={('status', '=', 'active'), ('jurisdiction', 'contains', 'california')}; return columns missing from prediction: {('expr', ""'active_union_member'""), ('expr', ""'high_rate_non_local'"")}"
+390,complex,film_production_management,False,False,False,"where_conditions differ: missing=set() extra={('is_lead_position', '=', 'true'), ('contract_role', '=', 'director of photography')}; return columns missing from prediction: {('bare', 'node')}"
+391,complex,film_production_management,False,False,False,"rel_types differ: gold=['CALLED_FOR', 'PART_OF'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'day_number'), ('prop', 'name')}"
+392,medium,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'Role'] pred=['CrewMember', 'Production']; hop_count differs: gold=2 pred=1; where_conditions differ: missing={('seniority_level', '=', 'senior')} extra=set()"
+393,medium,film_production_management,False,True,True,
+394,complex,film_production_management,False,True,True,
+395,complex,film_production_management,False,False,False,"where_conditions differ: missing={('jurisdiction', '=', 'national')} extra=set(); return columns missing from prediction: {('expr', ""'union_member'"")}"
+396,medium,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Department', 'HAS_ROLE', 'Role'] pred=['CrewMember', 'Department', 'Role']; return columns missing from prediction: {('prop', 'overtime_policy')}"
+397,medium,film_production_management,False,True,True,
+398,complex,film_production_management,False,True,True,
+399,medium,film_production_management,False,False,False,rel_types differ: gold=[] pred=['WORKS_ON']
+400,complex,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'Production', 'ShootDay'] pred=['Production', 'ShootDay']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'day_number')}"
+401,complex,film_production_management,False,True,True,
+402,complex,film_production_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+403,complex,film_production_management,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'name')}"
+404,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_rate')}"
+405,complex,film_production_management,False,False,False,aggregations differ: gold=[] pred=['count']
+406,complex,film_production_management,False,True,True,
+407,complex,film_production_management,False,True,True,
+408,complex,film_production_management,False,False,False,aggregations differ: gold=[] pred=['count']
+409,medium,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'CrewMember', 'ShootDay'] pred=['CallSheet', 'CrewMember', 'Production', 'ShootDay']; hop_count differs: gold=2 pred=3; optional_match differs: gold=False pred=True"
+410,medium,film_production_management,True,True,True,
+411,complex,film_production_management,False,True,True,
+412,complex,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'jurisdiction')}"
+413,complex,film_production_management,False,True,True,
+414,medium,film_production_management,False,True,True,
+415,medium,film_production_management,False,True,True,
+416,complex,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+417,complex,film_production_management,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+418,medium,film_production_management,False,False,True,"return columns missing from prediction: {('expr', ""'caunion'""), ('expr', ""'localhire'"")}"
+419,medium,film_production_management,False,True,True,
+420,medium,film_production_management,False,True,True,
+421,medium,film_production_management,False,True,True,
+422,medium,film_production_management,False,False,False,"rel_types differ: gold=['FOR_SHOOT_DAY', 'PART_OF'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; hop_count differs: gold=3 pred=4"
+423,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'shoot_date')}"
+424,medium,film_production_management,False,True,True,
+425,complex,film_production_management,False,True,True,
+426,complex,film_production_management,False,True,True,
+427,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+428,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'shoot_date')}"
+429,medium,film_production_management,False,True,True,
+430,medium,film_production_management,False,True,True,
+431,medium,film_production_management,False,True,True,
+432,medium,film_production_management,False,False,False,"rel_types differ: gold=['FOR_SHOOT_DAY'] pred=['FOR_SHOOT_DAY', 'PART_OF']"
+433,medium,film_production_management,False,False,False,"rel_types differ: gold=['CALLED_FOR', 'FOR_SHOOT_DAY'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']"
+434,medium,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'CrewMember', 'Production', 'ShootDay'] pred=['CallSheet', 'CrewMember', 'ShootDay']; hop_count differs: gold=3 pred=2"
+435,complex,film_production_management,False,True,True,
+436,complex,film_production_management,False,False,False,rel_types differ: gold=['MEMBER_OF'] pred=[]
+437,medium,film_production_management,False,True,True,
+438,medium,film_production_management,False,False,False,rel_types differ: gold=[] pred=['PART_OF']
+439,medium,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'ShootDay'] pred=['CrewMember', 'Production', 'Role', 'ShootDay']; rel_types differ: gold=['PART_OF'] pred=['HAS_ROLE', 'PART_OF', 'WORKS_ON']; hop_count differs: gold=2 pred=3; where_conditions differ: missing={('contract_role', '=', 'director of photography')} extra={('name', '=', 'director of photography')}"
+440,medium,film_production_management,False,True,True,
+441,medium,film_production_management,False,True,True,
+442,medium,film_production_management,False,True,True,
+443,medium,film_production_management,False,False,False,"rel_types differ: gold=['FOR_SHOOT_DAY'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY']; return columns missing from prediction: {('prop', 'day_number')}"
+444,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['HAS_ROLE', 'MEMBER_OF']; return columns missing from prediction: {('prop', 'local_number')}"
+445,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['MEMBER_OF', 'WORKS_ON']"
+446,medium,film_production_management,False,False,False,"where_conditions differ: missing={('version', '>', '1')} extra={('version', '>=', '2')}; return columns missing from prediction: {('prop', 'shoot_date')}"
+447,medium,film_production_management,False,True,True,
+448,medium,film_production_management,False,True,True,
+449,complex,film_production_management,False,False,False,"rel_types differ: gold=['BELONGS_TO_DEPARTMENT'] pred=['BELONGS_TO_DEPARTMENT', 'MEMBER_OF']; return columns missing from prediction: {('prop', 'local_number')}"
+450,medium,film_production_management,False,True,True,
+451,medium,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'ShootDay'] pred=['CrewMember', 'Production', 'Role', 'ShootDay']; rel_types differ: gold=['PART_OF'] pred=['HAS_ROLE', 'PART_OF', 'WORKS_ON']; hop_count differs: gold=2 pred=3; where_conditions differ: missing={('contract_role', '=', 'gaffer')} extra={('name', '=', 'gaffer')}; return columns missing from prediction: {('prop', 'shoot_date')}"
+452,medium,film_production_management,False,True,True,
+453,medium,film_production_management,False,False,False,"rel_types differ: gold=['BELONGS_TO_DEPARTMENT'] pred=['BELONGS_TO_DEPARTMENT', 'HAS_ROLE']"
+454,complex,film_production_management,False,True,True,
+455,medium,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'CrewMember', 'Production', 'ShootDay'] pred=['CallSheet', 'CrewMember', 'Department', 'Production', 'Role', 'ShootDay']; rel_types differ: gold=['FOR_SHOOT_DAY', 'PART_OF'] pred=['BELONGS_TO_DEPARTMENT', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF', 'WORKS_ON']; hop_count differs: gold=3 pred=5; where_conditions differ: missing={('contract_role', '=', 'sound mixer')} extra={('name', '=', 'sound mixers')}"
+456,medium,film_production_management,False,True,True,
+457,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+458,medium,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+459,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+460,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+461,complex,film_production_management,False,True,True,
+462,medium,film_production_management,False,False,False,"aggregations differ: gold=['avg'] pred=['avg', 'count']"
+463,medium,film_production_management,False,True,True,
+464,medium,film_production_management,False,False,False,rel_types differ: gold=['PART_OF'] pred=[]
+465,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+466,complex,film_production_management,False,True,True,
+467,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+468,complex,film_production_management,False,False,False,rel_types differ: gold=['HAS_ROLE'] pred=[]
+469,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+470,medium,film_production_management,False,True,True,
+471,medium,film_production_management,False,True,True,
+472,medium,film_production_management,False,True,True,
+473,complex,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'day_number')}"
+474,medium,film_production_management,False,False,False,rel_types differ: gold=[] pred=['PART_OF']
+475,complex,film_production_management,False,True,True,
+476,complex,film_production_management,False,True,True,
+477,complex,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+478,complex,film_production_management,False,False,False,"rel_types differ: gold=['HAS_ROLE'] pred=['HAS_ROLE', 'MEMBER_OF']"
+479,complex,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'CrewMember', 'Production', 'ShootDay'] pred=['CallSheet', 'CrewMember', 'ShootDay']; rel_types differ: gold=['FOR_SHOOT_DAY', 'WORKS_ON'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('prop', 'call_time_override')}"
+480,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['BELONGS_TO_DEPARTMENT']; aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+481,medium,film_production_management,False,False,False,"where_conditions differ: missing=set() extra={('budget_tier', '=', 'micro-budget')}"
+482,complex,film_production_management,False,False,False,"rel_types differ: gold=['FOR_SHOOT_DAY', 'PART_OF'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; hop_count differs: gold=4 pred=3; where_conditions differ: missing={('contract_role', '=', 'director of photography')} extra={('name', '=', 'director of photography')}"
+483,complex,film_production_management,False,True,True,
+484,complex,film_production_management,False,False,False,"rel_types differ: gold=['HAS_ROLE'] pred=['HAS_ROLE', 'MEMBER_OF']"
+485,complex,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'shoot_date'), ('prop', 'name'), ('prop', 'document_number')}"
+486,complex,film_production_management,False,True,True,
+487,complex,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'version')}"
+488,complex,film_production_management,False,False,False,"rel_types differ: gold=['BELONGS_TO_DEPARTMENT', 'HAS_ROLE'] pred=['BELONGS_TO_DEPARTMENT', 'HAS_ROLE', 'WORKS_ON']"
+489,complex,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'start_date')}"
+490,complex,film_production_management,False,False,False,"where_conditions differ: missing={('seniority_level', '=', 'lead')} extra={('seniority_level', '=', 'senior')}"
+491,complex,film_production_management,False,True,True,
+492,complex,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+493,complex,film_production_management,False,False,False,"rel_types differ: gold=['FOR_SHOOT_DAY'] pred=[]; aggregations differ: gold=['count'] pred=[]; return columns missing from prediction: {('agg', 'count:*')}"
+494,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['HAS_ROLE']; optional_match differs: gold=False pred=True; where_conditions differ: missing={('confirmed', '=', 'true')} extra={('is_lead_position', '=', 'true')}"
+495,complex,film_production_management,False,False,False,"rel_types differ: gold=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'HAS_ROLE', 'PART_OF'] pred=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF']"
+496,complex,film_production_management,False,True,True,
+497,complex,film_production_management,False,False,False,rel_types differ: gold=[] pred=['PART_OF']
+498,complex,film_production_management,False,True,True,
+499,medium,film_production_management,False,False,False,rel_types differ: gold=[] pred=['PART_OF']; optional_match differs: gold=True pred=False
+500,complex,film_production_management,False,False,False,"hop_count differs: gold=2 pred=3; optional_match differs: gold=False pred=True; where_conditions differ: missing=set() extra={('scene_count', '>', '10')}"
+501,medium,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['BELONGS_TO_DEPARTMENT', 'HAS_ROLE']; aggregations differ: gold=['avg', 'collect', 'count'] pred=['avg', 'count']; return columns missing from prediction: {('agg', 'count:*')}"
+502,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'Union'] pred=['CrewMember', 'Production', 'Role', 'Union']; rel_types differ: gold=['MEMBER_OF'] pred=['HAS_ROLE', 'MEMBER_OF', 'WORKS_ON']; aggregations differ: gold=['collect'] pred=[]; hop_count differs: gold=2 pred=3; where_conditions differ: missing={('contract_role', '=', 'gaffer')} extra={('name', '=', 'gaffer')}; return columns missing from prediction: {('agg', 'collect:name')}"
+503,complex,film_production_management,False,False,False,"rel_types differ: gold=['CALLED_FOR', 'FOR_SHOOT_DAY'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; return columns missing from prediction: {('prop', 'shoot_date')}"
+504,complex,film_production_management,False,True,True,
+505,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['PART_OF']; return columns missing from prediction: {('agg', 'count:version')}"
+506,complex,film_production_management,False,False,False,"rel_types differ: gold=['HAS_ROLE'] pred=['FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF']; return columns missing from prediction: {('prop', 'shoot_date')}"
+507,medium,film_production_management,False,False,False,rel_types differ: gold=['HAS_ROLE'] pred=[]
+508,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['CALLED_FOR']; return columns missing from prediction: {('prop', 'local_number')}"
+509,medium,film_production_management,False,True,True,
+510,complex,film_production_management,False,False,False,"rel_types differ: gold=[] pred=['PART_OF']; return columns missing from prediction: {('prop', 'shoot_date')}"
+511,complex,film_production_management,False,True,True,
+512,medium,film_production_management,False,True,True,
+513,complex,film_production_management,False,False,False,"rel_types differ: gold=['BELONGS_TO_DEPARTMENT'] pred=['BELONGS_TO_DEPARTMENT', 'HAS_ROLE']; aggregations differ: gold=['sum'] pred=['count']; return columns missing from prediction: {('agg', 'sum:head_count')}"
+514,medium,film_production_management,False,False,False,"aggregations differ: gold=['collect', 'count'] pred=['count']; optional_match differs: gold=False pred=True"
+515,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'Role', 'Union'] pred=['CallSheet', 'CrewMember', 'Production', 'Role', 'ShootDay', 'Union']; rel_types differ: gold=['HAS_ROLE', 'MEMBER_OF', 'WORKS_ON'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'MEMBER_OF', 'PART_OF']; aggregations differ: gold=['avg'] pred=['avg', 'count']; hop_count differs: gold=3 pred=5"
+516,complex,film_production_management,False,False,False,"rel_types differ: gold=['HAS_ROLE'] pred=['FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF']"
+517,medium,film_production_management,False,False,True,"return columns missing from prediction: {('expr', ""'department'""), ('expr', ""'production'"")}"
+518,complex,film_production_management,False,True,True,
+519,medium,film_production_management,False,True,True,
+520,medium,film_production_management,False,True,True,
+521,medium,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'shoot_date')}"
+522,medium,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+523,complex,film_production_management,False,False,False,"where_conditions differ: missing={('jurisdiction', '=', 'california')} extra={('jurisdiction', 'contains', 'california')}; return columns missing from prediction: {('prop', 'local_number')}"
+524,medium,film_production_management,False,True,True,
+525,medium,film_production_management,False,True,True,
+526,medium,film_production_management,False,True,True,
+527,complex,film_production_management,False,True,True,
+528,medium,film_production_management,False,True,True,
+529,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'ShootDay'] pred=['CallSheet', 'CrewMember', 'Production', 'ShootDay']; rel_types differ: gold=['PART_OF', 'WORKS_ON'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; hop_count differs: gold=2 pred=3; optional_match differs: gold=False pred=True"
+530,complex,film_production_management,False,True,True,
+531,complex,film_production_management,False,False,True,"return columns missing from prediction: {('prop', 'id'), ('prop', 'document_number')}"
+532,complex,film_production_management,False,True,True,
+533,complex,film_production_management,False,True,True,
+534,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production'] pred=['CallSheet', 'CrewMember', 'Production', 'ShootDay']; rel_types differ: gold=['WORKS_ON'] pred=['CALLED_FOR', 'FOR_SHOOT_DAY', 'PART_OF']; aggregations differ: gold=[] pred=['count']; hop_count differs: gold=1 pred=3"
+535,complex,film_production_management,False,True,True,
+536,complex,film_production_management,False,False,False,"aggregations differ: gold=['avg'] pred=['avg', 'count']; return columns missing from prediction: {('expr', 'avg(cm.day_rate-r.standard_day_rate)')}"
+537,complex,film_production_management,False,False,False,optional_match differs: gold=False pred=True
+538,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'Role'] pred=['CrewMember', 'Production']; rel_types differ: gold=['HAS_ROLE', 'WORKS_ON'] pred=['WORKS_ON']; hop_count differs: gold=2 pred=1"
+539,complex,film_production_management,False,False,False,"rel_types differ: gold=['CALLED_FOR'] pred=['CALLED_FOR', 'PART_OF']; return columns missing from prediction: {('prop', 'scene_count')}"
+540,complex,film_production_management,False,True,True,
+541,complex,film_production_management,False,True,True,
+542,complex,film_production_management,False,False,False,"hop_count differs: gold=2 pred=3; optional_match differs: gold=False pred=True; return columns missing from prediction: {('agg', 'min:shoot_date')}"
+543,complex,film_production_management,False,False,False,aggregations differ: gold=[] pred=['count']
+544,complex,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'CrewMember', 'Department', 'Role', 'ShootDay'] pred=['CallSheet', 'CrewMember', 'Department', 'Production', 'Role', 'ShootDay']; rel_types differ: gold=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE'] pred=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF']; hop_count differs: gold=4 pred=5; return columns missing from prediction: {('prop', 'shoot_date')}"
+545,complex,film_production_management,False,False,False,"labels differ: gold=['CrewMember', 'Production', 'Role'] pred=['CrewMember', 'Production']; rel_types differ: gold=['HAS_ROLE'] pred=[]; hop_count differs: gold=2 pred=1; where_conditions differ: missing=set() extra={('production_type', '=', 'feature')}; return columns missing from prediction: {('prop', 'name')}"
+546,complex,film_production_management,False,True,True,
+547,complex,film_production_management,False,False,False,"rel_types differ: gold=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'WORKS_ON'] pred=['BELONGS_TO_DEPARTMENT', 'CALLED_FOR', 'FOR_SHOOT_DAY', 'HAS_ROLE', 'PART_OF']; return columns missing from prediction: {('prop', 'shoot_date')}"
+548,complex,film_production_management,False,False,False,"labels differ: gold=['CallSheet', 'ShootDay'] pred=['CallSheet', 'Production', 'ShootDay']; rel_types differ: gold=['FOR_SHOOT_DAY'] pred=['FOR_SHOOT_DAY', 'PART_OF']; hop_count differs: gold=2 pred=4; return columns missing from prediction: {('prop', 'shoot_date'), ('expr', ""'specific_date'""), ('expr', ""'night_shoot'"")}"
+549,complex,film_production_management,False,True,True,
+550,complex,film_production_management,False,True,True,
+551,complex,film_production_management,False,True,True,
+552,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'date_prescribed')}"
+553,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'date_prescribed')}"
+554,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'date_prescribed')}"
+555,easy,veterinary_clinic_records,False,True,True,
+556,easy,veterinary_clinic_records,True,True,True,
+557,easy,veterinary_clinic_records,True,True,True,
+558,easy,veterinary_clinic_records,True,True,True,
+559,easy,veterinary_clinic_records,True,True,True,
+560,easy,veterinary_clinic_records,False,True,True,
+561,easy,veterinary_clinic_records,False,True,True,
+562,easy,veterinary_clinic_records,True,True,True,
+563,easy,veterinary_clinic_records,False,True,True,
+564,easy,veterinary_clinic_records,False,True,True,
+565,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'pickup_method')}"
+566,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'severity')}"
+567,easy,veterinary_clinic_records,False,True,True,
+568,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'controlled_substance')}"
+569,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'species')}"
+570,easy,veterinary_clinic_records,False,False,False,"aggregations differ: gold=[] pred=['count']; optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'date_prescribed')}"
+571,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'dea_registered')}"
+572,easy,veterinary_clinic_records,True,True,True,
+573,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'name')}"
+574,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+575,easy,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+576,easy,veterinary_clinic_records,False,True,True,
+577,medium,veterinary_clinic_records,False,True,True,
+578,medium,veterinary_clinic_records,False,True,True,
+579,medium,veterinary_clinic_records,False,False,False,"where_conditions differ: missing={('severity', '=', 'critical'), ('severity', '=', 'high')} extra={('severity', 'in', ""['critical', 'high']"")}"
+580,medium,veterinary_clinic_records,False,True,True,
+581,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'allergy_notes')}"
+582,complex,veterinary_clinic_records,False,True,True,
+583,medium,veterinary_clinic_records,False,True,True,
+584,medium,veterinary_clinic_records,False,True,True,
+585,medium,veterinary_clinic_records,False,True,True,
+586,medium,veterinary_clinic_records,False,True,True,
+587,complex,veterinary_clinic_records,False,False,False,optional_match differs: gold=True pred=False
+588,medium,veterinary_clinic_records,False,True,True,
+589,medium,veterinary_clinic_records,False,True,True,
+590,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'drug_class')}"
+591,medium,veterinary_clinic_records,False,True,True,
+592,medium,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED'] pred=['LINKED_TO_MEDICATION']; return columns missing from prediction: {('prop', 'severity')}"
+593,complex,veterinary_clinic_records,False,True,True,
+594,complex,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal', 'Prescription'] pred=['AdverseReaction', 'Medication', 'Prescription']; rel_types differ: gold=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'SPECIFIES'] pred=['LINKED_TO_MEDICATION', 'SPECIFIES']; hop_count differs: gold=4 pred=2"
+595,complex,veterinary_clinic_records,False,True,True,
+596,complex,veterinary_clinic_records,False,True,True,
+597,complex,veterinary_clinic_records,False,False,False,aggregations differ: gold=['collect'] pred=[]; optional_match differs: gold=True pred=False
+598,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('agg', 'count:*')}"
+599,complex,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED', 'SPECIFIES'] pred=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED']; hop_count differs: gold=5 pred=4"
+600,medium,veterinary_clinic_records,False,True,True,
+601,medium,veterinary_clinic_records,False,False,False,"where_conditions differ: missing={('severity', '=', 'critical'), ('severity', '=', 'high')} extra={('severity', 'in', ""['critical', 'high']"")}"
+602,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'PatientAnimal']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['EXPERIENCED']; hop_count differs: gold=2 pred=1"
+603,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+604,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+605,medium,veterinary_clinic_records,False,False,False,"aggregations differ: gold=['avg', 'count'] pred=['avg']; return columns missing from prediction: {('agg', 'count:*')}"
+606,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+607,medium,veterinary_clinic_records,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('bare', 'node')}"
+608,complex,veterinary_clinic_records,False,True,True,
+609,complex,veterinary_clinic_records,False,False,False,optional_match differs: gold=True pred=False
+610,complex,veterinary_clinic_records,False,True,True,
+611,complex,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Medication', 'PatientAnimal', 'Prescription'] pred=['DispensingEvent', 'PatientAnimal', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'FULFILLED_BY', 'SPECIFIES'] pred=['FOR_PATIENT', 'FULFILLED_BY']; hop_count differs: gold=3 pred=2; return columns missing from prediction: {('bare', 'node')}"
+612,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'Prescription'] pred=['Medication', 'PatientAnimal', 'Prescription']; rel_types differ: gold=['SPECIFIES'] pred=['FOR_PATIENT', 'SPECIFIES']; hop_count differs: gold=1 pred=2"
+613,medium,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED', 'SPECIFIES'] pred=['EXPERIENCED', 'LINKED_TO_MEDICATION', 'PRESCRIBED', 'SPECIFIES']; hop_count differs: gold=5 pred=4"
+614,complex,veterinary_clinic_records,False,True,True,
+615,medium,veterinary_clinic_records,False,True,True,
+616,medium,veterinary_clinic_records,False,True,True,
+617,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('agg', 'count:*')}"
+618,medium,veterinary_clinic_records,False,True,True,
+619,complex,veterinary_clinic_records,False,True,True,
+620,medium,veterinary_clinic_records,False,True,True,
+621,medium,veterinary_clinic_records,False,True,True,
+622,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'Prescription'] pred=['Medication', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'SPECIFIES'] pred=['SPECIFIES']; hop_count differs: gold=2 pred=1"
+623,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'dispensed_date')}"
+624,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+625,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'reported_date')}"
+626,medium,veterinary_clinic_records,False,True,True,
+627,medium,veterinary_clinic_records,False,True,True,
+628,medium,veterinary_clinic_records,False,True,True,
+629,medium,veterinary_clinic_records,False,True,True,
+630,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'Prescription'] pred=['PatientAnimal', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'SPECIFIES'] pred=['FOR_PATIENT']; hop_count differs: gold=2 pred=1"
+631,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'severity')}"
+632,medium,veterinary_clinic_records,False,True,True,
+633,medium,veterinary_clinic_records,False,True,True,
+634,medium,veterinary_clinic_records,False,True,True,
+635,medium,veterinary_clinic_records,False,True,True,
+636,medium,veterinary_clinic_records,False,True,True,
+637,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'date_prescribed')}"
+638,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+639,medium,veterinary_clinic_records,False,True,True,
+640,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PrescribingVet', 'Prescription'] pred=['Medication', 'Prescription']; rel_types differ: gold=['PRESCRIBED', 'SPECIFIES'] pred=['SPECIFIES']; hop_count differs: gold=2 pred=1"
+641,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Pharmacist', 'Prescription'] pred=['DispensingEvent', 'Pharmacist']; rel_types differ: gold=['DISPENSED', 'FULFILLED_BY'] pred=['DISPENSED']; hop_count differs: gold=2 pred=1"
+642,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'PatientAnimal']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['EXPERIENCED']; hop_count differs: gold=2 pred=1"
+643,medium,veterinary_clinic_records,False,True,True,
+644,medium,veterinary_clinic_records,False,True,True,
+645,medium,veterinary_clinic_records,False,True,True,
+646,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'Prescription'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['LINKED_TO_MEDICATION', 'SPECIFIES'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+647,medium,veterinary_clinic_records,False,True,True,
+648,medium,veterinary_clinic_records,False,True,True,
+649,medium,veterinary_clinic_records,False,True,True,
+650,medium,veterinary_clinic_records,False,True,True,
+651,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'dosage')}"
+652,medium,veterinary_clinic_records,False,True,True,
+653,medium,veterinary_clinic_records,False,True,True,
+654,medium,veterinary_clinic_records,False,True,True,
+655,medium,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['FOR_PATIENT', 'PRESCRIBED'] pred=['FOR_PATIENT']; return columns missing from prediction: {('prop', 'dosage')}"
+656,medium,veterinary_clinic_records,False,True,True,
+657,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PrescribingVet', 'Prescription'] pred=['Medication', 'Prescription']; rel_types differ: gold=['PRESCRIBED', 'SPECIFIES'] pred=['SPECIFIES']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'name')}"
+658,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'Prescription'] pred=['Medication', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'SPECIFIES'] pred=['SPECIFIES']; hop_count differs: gold=2 pred=1"
+659,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'PatientAnimal', 'Prescription'] pred=['DispensingEvent']; rel_types differ: gold=['FOR_PATIENT', 'FULFILLED_BY'] pred=[]; hop_count differs: gold=2 pred=0; return columns missing from prediction: {('prop', 'name')}"
+660,medium,veterinary_clinic_records,False,True,True,
+661,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Pharmacist', 'Prescription'] pred=['DispensingEvent', 'Pharmacist']; rel_types differ: gold=['DISPENSED', 'FULFILLED_BY'] pred=['DISPENSED']; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'dosage')}"
+662,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Pharmacist', 'Prescription'] pred=['DispensingEvent', 'Pharmacist']; rel_types differ: gold=['DISPENSED', 'FULFILLED_BY'] pred=['DISPENSED']; hop_count differs: gold=2 pred=1"
+663,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+664,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+665,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+666,medium,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['PRESCRIBED', 'SPECIFIES'] pred=['SPECIFIES']; return columns missing from prediction: {('prop', 'date_prescribed')}"
+667,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'dosage')}"
+668,medium,veterinary_clinic_records,False,True,True,
+669,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Pharmacist', 'Prescription'] pred=['DispensingEvent', 'Pharmacist']; rel_types differ: gold=['DISPENSED', 'FULFILLED_BY'] pred=[]; hop_count differs: gold=2 pred=1; return columns missing from prediction: {('prop', 'dosage')}"
+670,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Pharmacist', 'Prescription'] pred=['DispensingEvent', 'Pharmacist']; rel_types differ: gold=['DISPENSED', 'FULFILLED_BY'] pred=['DISPENSED']; hop_count differs: gold=2 pred=1"
+671,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['PatientAnimal', 'PrescribingVet', 'Prescription'] pred=['PrescribingVet', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'PRESCRIBED'] pred=['PRESCRIBED']; hop_count differs: gold=2 pred=1"
+672,medium,veterinary_clinic_records,False,True,True,
+673,medium,veterinary_clinic_records,False,True,True,
+674,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['AdverseReaction', 'Medication', 'PatientAnimal'] pred=['AdverseReaction', 'Medication']; rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']; hop_count differs: gold=2 pred=1"
+675,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'PrescribingVet', 'Prescription'] pred=['PatientAnimal', 'PrescribingVet', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'PRESCRIBED', 'SPECIFIES'] pred=['FOR_PATIENT', 'PRESCRIBED']; hop_count differs: gold=3 pred=2"
+676,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Pharmacist', 'Prescription'] pred=['DispensingEvent', 'Pharmacist']; rel_types differ: gold=['DISPENSED', 'FULFILLED_BY'] pred=['DISPENSED']; hop_count differs: gold=2 pred=1"
+677,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'quantity_dispensed')}"
+678,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'PrescribingVet', 'Prescription'] pred=['PatientAnimal', 'PrescribingVet', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'PRESCRIBED', 'SPECIFIES'] pred=['FOR_PATIENT', 'PRESCRIBED']; hop_count differs: gold=3 pred=2"
+679,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'duration_days')}"
+680,medium,veterinary_clinic_records,False,True,True,
+681,medium,veterinary_clinic_records,False,True,True,
+682,medium,veterinary_clinic_records,False,True,True,
+683,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'dosage')}"
+684,medium,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'PrescribingVet', 'Prescription'] pred=['Medication', 'PrescribingVet', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'PRESCRIBED', 'SPECIFIES'] pred=['PRESCRIBED', 'SPECIFIES']; hop_count differs: gold=3 pred=2"
+685,medium,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'dispensed_date')}"
+686,medium,veterinary_clinic_records,False,True,True,
+687,complex,veterinary_clinic_records,False,False,False,"labels differ: gold=['Medication', 'PatientAnimal', 'Prescription'] pred=['Medication', 'PatientAnimal', 'PrescribingVet', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'SPECIFIES'] pred=['FOR_PATIENT', 'PRESCRIBED', 'SPECIFIES']; hop_count differs: gold=2 pred=3"
+688,complex,veterinary_clinic_records,False,True,True,
+689,complex,veterinary_clinic_records,False,True,True,
+690,complex,veterinary_clinic_records,False,True,True,
+691,complex,veterinary_clinic_records,False,True,True,
+692,complex,veterinary_clinic_records,False,False,False,optional_match differs: gold=False pred=True
+693,complex,veterinary_clinic_records,False,True,True,
+694,complex,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED', 'SPECIFIES'] pred=['FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED']; hop_count differs: gold=5 pred=4"
+695,complex,veterinary_clinic_records,False,True,True,
+696,complex,veterinary_clinic_records,False,True,True,
+697,complex,veterinary_clinic_records,False,True,True,
+698,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('expr', ""'adversereaction'"")}"
+699,complex,veterinary_clinic_records,False,True,True,
+700,medium,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED', 'SPECIFIES'] pred=['EXPERIENCED', 'FOR_PATIENT', 'LINKED_TO_MEDICATION', 'PRESCRIBED']; hop_count differs: gold=5 pred=4; where_conditions differ: missing=set() extra={('specialty', '=', 'internal medicine')}"
+701,complex,veterinary_clinic_records,False,True,True,
+702,complex,veterinary_clinic_records,False,True,True,
+703,complex,veterinary_clinic_records,False,False,False,"aggregations differ: gold=['collect'] pred=[]; return columns missing from prediction: {('agg', 'collect:reaction_type'), ('agg', 'collect:name')}"
+704,complex,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['DISPENSED', 'FOR_PATIENT', 'FULFILLED_BY', 'SPECIFIES'] pred=['FOR_PATIENT', 'FULFILLED_BY', 'SPECIFIES']; return columns missing from prediction: {('prop', 'dispensed_date')}"
+705,complex,veterinary_clinic_records,False,True,True,
+706,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('prop', 'date_prescribed'), ('prop', 'reported_date')}"
+707,complex,veterinary_clinic_records,False,True,True,
+708,complex,veterinary_clinic_records,False,False,False,"aggregations differ: gold=['count', 'max', 'min'] pred=['max', 'min']; return columns missing from prediction: {('agg', 'count:*')}"
+709,complex,veterinary_clinic_records,False,False,False,"optional_match differs: gold=False pred=True; return columns missing from prediction: {('prop', 'allergy_notes')}"
+710,complex,veterinary_clinic_records,False,False,False,"where_conditions differ: missing=set() extra={('species', '=', 'cat')}; return columns missing from prediction: {('expr', ""'dog'""), ('expr', ""'cat'"")}"
+711,complex,veterinary_clinic_records,False,True,True,
+712,complex,veterinary_clinic_records,False,True,True,
+713,complex,veterinary_clinic_records,False,True,True,
+714,complex,veterinary_clinic_records,False,False,False,"aggregations differ: gold=['count', 'sum'] pred=['sum']; return columns missing from prediction: {('agg', 'count:*')}"
+715,complex,veterinary_clinic_records,False,True,True,
+716,complex,veterinary_clinic_records,False,True,True,
+717,complex,veterinary_clinic_records,False,False,True,"return columns missing from prediction: {('bare', 'node')}"
+718,complex,veterinary_clinic_records,False,True,True,
+719,complex,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED', 'LINKED_TO_MEDICATION'] pred=['LINKED_TO_MEDICATION']"
+720,complex,veterinary_clinic_records,False,True,True,
+721,complex,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Medication', 'PatientAnimal', 'PrescribingVet', 'Prescription'] pred=['DispensingEvent', 'PatientAnimal', 'PrescribingVet', 'Prescription']; rel_types differ: gold=['FOR_PATIENT', 'FULFILLED_BY', 'PRESCRIBED', 'SPECIFIES'] pred=['FOR_PATIENT', 'FULFILLED_BY', 'PRESCRIBED']; hop_count differs: gold=4 pred=3"
+722,complex,veterinary_clinic_records,False,False,False,"where_conditions differ: missing={('severity', 'in', ""['high','critical']"")} extra={('severity', 'in', ""['high', 'critical']"")}"
+723,complex,veterinary_clinic_records,False,False,False,"where_conditions differ: missing={('severity', 'in', ""['moderate','high','critical']"")} extra={('severity', 'in', ""['moderate', 'high', 'critical']"")}; return columns missing from prediction: {('bare', 'node')}"
+724,complex,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'PatientAnimal', 'Pharmacist', 'PrescribingVet', 'Prescription'] pred=['DispensingEvent', 'Pharmacist', 'PrescribingVet', 'Prescription']; rel_types differ: gold=['DISPENSED', 'FOR_PATIENT', 'FULFILLED_BY', 'PRESCRIBED'] pred=['DISPENSED', 'FULFILLED_BY', 'PRESCRIBED']; hop_count differs: gold=4 pred=3"
+725,complex,veterinary_clinic_records,False,True,True,
+726,complex,veterinary_clinic_records,False,True,True,
+727,complex,veterinary_clinic_records,False,False,False,"rel_types differ: gold=['EXPERIENCED'] pred=[]; return columns missing from prediction: {('expr', ""'low'""), ('expr', ""'moderate'"")}"
+728,complex,veterinary_clinic_records,False,True,True,
+729,complex,veterinary_clinic_records,False,True,True,
+730,complex,veterinary_clinic_records,False,False,False,"where_conditions differ: missing={('refills_allowed', '>=', '1')} extra={('refills_allowed', '>', '0')}"
+731,complex,veterinary_clinic_records,False,True,True,
+732,complex,veterinary_clinic_records,False,True,True,
+733,complex,veterinary_clinic_records,False,True,True,
+734,complex,veterinary_clinic_records,False,True,True,
+735,complex,veterinary_clinic_records,False,True,True,
+736,complex,veterinary_clinic_records,False,True,True,
+737,complex,veterinary_clinic_records,False,True,True,
+738,complex,veterinary_clinic_records,False,True,True,
+739,complex,veterinary_clinic_records,False,True,True,
+740,complex,veterinary_clinic_records,False,False,False,"labels differ: gold=['DispensingEvent', 'Medication', 'Prescription'] pred=['DispensingEvent', 'Prescription']; rel_types differ: gold=['FULFILLED_BY', 'SPECIFIES'] pred=['FULFILLED_BY']; hop_count differs: gold=2 pred=1"
+741,complex,veterinary_clinic_records,False,False,False,"where_conditions differ: missing={('species', 'in', ""['dog', 'cat']"")} extra={('species', '=', 'cat'), ('species', '=', 'dog')}; return columns missing from prediction: {('bare', 'node')}"
+742,complex,veterinary_clinic_records,False,True,True,
+743,complex,veterinary_clinic_records,False,True,True,
+744,complex,veterinary_clinic_records,False,False,False,"aggregations differ: gold=['count'] pred=['collect', 'count']"
